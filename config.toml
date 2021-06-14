@@ -1,0 +1,4 @@
+baseURL = "http://sim.ilitu.de/"
+languageCode = "en-us"
+title = "similitude"
+theme = "base16"
