@@ -1,0 +1,14 @@
+{{ $base16Css := resources.Get "css/base16.css" }}
+{{ $extra := resources.Get "css/extra.css" }}
+{{ $cssBundle := slice $base16Css $extra | resources.Concat "css/style.css" }}
+{{ $permalink := $cssBundle.Permalink }}
+
+<h1 class="site-title">
+  <span class="base05">[</span><span
+    class="prism"><b>s</b><b>i</b><b>m</b><b>i</b><b>l</b><b>i</b><b>t</b><b>u</b><b>de</b></span><span
+    class="base05">] # _</span>
+</h1>
+
+<!-- <div class="hero-logo">
+  <img src="{{ "img/logo.svg" | relURL }}">
+</div> -->
