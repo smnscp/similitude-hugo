@@ -31,3 +31,4 @@ jobs:
           external_repository: smnscp/smnscp.github.io
           publish_branch: main
           publish_dir: ./public
+          cname: sim.ilitu.de
