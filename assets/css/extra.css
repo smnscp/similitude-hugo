@@ -17,3 +17,8 @@
   text-shadow: 0 0 0.1em var(--base00);
 	white-space: nowrap;
 }
+
+header a.path {
+  text-decoration: none;
+}
+
