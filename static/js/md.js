@@ -1,4 +1,7 @@
-window.md = new remarkable.Remarkable("full", {
+import hljs from "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/es/highlight.min.js";
+import { Remarkable } from "https://cdn.jsdelivr.net/npm/remarkable@2.0.1/dist/esm/index.min.js";
+
+const md = new Remarkable("full", {
   html: false, // Enable HTML tags in source
   xhtmlOut: true, // Use '/' to close single tags (<br />)
   breaks: false, // Convert '\n' in paragraphs into <br>
@@ -29,3 +32,4 @@ window.md = new remarkable.Remarkable("full", {
     return ""; // use external default escaping
   },
 });
+export default md;
