@@ -32,4 +32,22 @@ const md = new Remarkable("full", {
     return ""; // use external default escaping
   },
 });
-export default md;
+
+export default class MarkdownElement extends HTMLElement {
+  constructor() {
+    super();
+    this.render(this.innerText);
+  }
+
+  get innerText() {
+    return super.innerText;
+  }
+
+  set innerText(text) {
+    this.render(text);
+  }
+
+  render(text) {
+    this.innerHTML = md.render(text);
+  }
+}

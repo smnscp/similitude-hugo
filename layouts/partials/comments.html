@@ -14,8 +14,7 @@
 
 <script type="module">
   import RootElement from "{{ .Site.Params.commentsServer }}/js/comments/root_element.js";
-  import md from "/js/md.js";
+  import MarkdownElement from "/js/md.js";
+  customElements.define("md-div", MarkdownElement);
   customElements.define("comments-root", RootElement);
-  const commentsRoot = document.querySelector("comments-root");
-  commentsRoot.md = md;
 </script>
