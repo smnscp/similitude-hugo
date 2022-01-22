@@ -1,0 +1,13 @@
+<section id="section-comments">
+  <h2>Comments</h2>
+  <div id="comments-container">
+    <noscript>This is where comments would appear if that client-side scripting
+      enginge was active.</noscript>
+  </div>
+</section>
+
+<script src="{{ .Site.Params.commentsServer }}/js/load_comments.js"></script>
+
+<script type="text/javascript">
+  loadComments('#comments-container', '{{ .Site.Params.commentsServer }}/comments/{{ .File.ContentBaseName }}')
+</script>

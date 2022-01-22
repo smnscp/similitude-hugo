@@ -2,3 +2,5 @@ baseURL = "http://sim.ilitu.de/"
 languageCode = "en-us"
 title = "similitude"
 theme = "base16"
+[params]
+	commentsServer = "http://localhost:8000"
