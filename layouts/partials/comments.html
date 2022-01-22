@@ -8,6 +8,16 @@
 
 <script src="{{ .Site.Params.commentsServer }}/js/load_comments.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/default.min.css">
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/javascript.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/remarkable@2.0.1/dist/remarkable.min.js"></script>
+<script src="/js/md.js"></script>
+
 <script type="text/javascript">
-  loadComments('#comments-container', '{{ .Site.Params.commentsServer }}/comments/{{ .File.ContentBaseName }}')
+  loadComments(
+    '#comments-container',
+    '{{ .Site.Params.commentsServer }}/comments/{{ .File.ContentBaseName }}',
+    (message) => md.render(message)
+  );
 </script>
