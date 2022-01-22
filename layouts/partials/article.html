@@ -29,4 +29,6 @@
   </section>
 </article>
 
-{{ partial "comments.html" . }}
+{{ if .Page.Params.comments }}
+  {{ partial "comments.html" . }}
+{{ end }}
