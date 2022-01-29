@@ -14,7 +14,15 @@
 
 <script type="module">
   import RootElement from "{{ .Site.Params.commentsServer }}/js/comments/root_element.js";
-  import MarkdownElement from "/js/md.js";
+  import BaseElement from "{{ .Site.Params.commentsServer }}/js/simple/base_element.js";
+  import md from "/js/md.js";
+
+  class MarkdownElement extends BaseElement {
+    render(text) {
+      this.innerHTML = md.render(text);
+    }
+  }
+
   customElements.define("md-div", MarkdownElement);
   customElements.define("comments-root", RootElement);
 </script>

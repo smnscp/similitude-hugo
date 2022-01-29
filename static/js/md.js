@@ -33,21 +33,4 @@ const md = new Remarkable("full", {
   },
 });
 
-export default class MarkdownElement extends HTMLElement {
-  constructor() {
-    super();
-    this.render(this.innerText);
-  }
-
-  get innerText() {
-    return super.innerText;
-  }
-
-  set innerText(text) {
-    this.render(text);
-  }
-
-  render(text) {
-    this.innerHTML = md.render(text);
-  }
-}
+export default md;
