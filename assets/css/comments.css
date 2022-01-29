@@ -4,3 +4,15 @@
     padding-right: 2rem;
   }
 }
+comments-root ol {
+  counter-reset: comments-item;
+}
+comments-root li {
+  counter-increment: comments-item;
+}
+comments-root li::marker {
+  content: counters(comments-item, ".") ". ";
+  color: var(--base04);
+  font-size: smaller;
+  font-weight: bold;
+}
