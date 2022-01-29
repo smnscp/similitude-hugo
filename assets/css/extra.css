@@ -1,21 +1,35 @@
-.prism :nth-child(7n + 1) { color: var(--base08) }
-.prism :nth-child(7n + 2) { color: var(--base09) }
-.prism :nth-child(7n + 3) { color: var(--base0a) }
-.prism :nth-child(7n + 4) { color: var(--base0b) }
-.prism :nth-child(7n + 5) { color: var(--base0c) }
-.prism :nth-child(7n + 6) { color: var(--base0d) }
-.prism :nth-child(7n + 7) { color: var(--base0e) }
+.prism :nth-child(7n + 1) {
+  color: var(--base08);
+}
+.prism :nth-child(7n + 2) {
+  color: var(--base09);
+}
+.prism :nth-child(7n + 3) {
+  color: var(--base0a);
+}
+.prism :nth-child(7n + 4) {
+  color: var(--base0b);
+}
+.prism :nth-child(7n + 5) {
+  color: var(--base0c);
+}
+.prism :nth-child(7n + 6) {
+  color: var(--base0d);
+}
+.prism :nth-child(7n + 7) {
+  color: var(--base0e);
+}
 
 .homepage h1.site-title {
-  background: url('/img/logo.svg');
+  background: url("/img/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
-	background-position: 2.333em;
+  background-position: 2.333em;
   line-height: 1em;
   padding: 1em 0 0.75em;
-	text-align: left;
+  text-align: left;
   text-shadow: 0 0 0.1em var(--base00);
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 header a.path {
@@ -28,13 +42,13 @@ body > header:first-child > .container:first-child {
 }
 
 body > header:first-child > .container:first-child a:first-child::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: -0.25em;
   bottom: -0.25em;
   width: 2em;
-  background-image: url('/img/logo.svg');
+  background-image: url("/img/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
