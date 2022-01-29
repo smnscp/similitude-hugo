@@ -1,6 +1,7 @@
 {{ $base16Css := resources.Get "css/base16.css" }}
 {{ $extra := resources.Get "css/extra.css" }}
-{{ $cssBundle := slice $base16Css $extra | resources.Concat "css/style.css" }}
+{{ $comments := resources.Get "css/comments.css" }}
+{{ $cssBundle := slice $base16Css $extra $comments | resources.Concat "css/style.css" }}
 {{ $permalink := $cssBundle.Permalink }}
 
 <h1 class="site-title">
