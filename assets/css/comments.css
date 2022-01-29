@@ -4,13 +4,13 @@
     padding-right: 2rem;
   }
 }
-comments-root ol {
+comments-root ol.comments-list {
   counter-reset: comments-item;
 }
-comments-root li {
+comments-root ol.comments-list > li {
   counter-increment: comments-item;
 }
-comments-root li::marker {
+comments-root ol.comments-list > li::marker {
   content: counters(comments-item, ".") ". ";
   color: var(--base04);
   font-size: smaller;
