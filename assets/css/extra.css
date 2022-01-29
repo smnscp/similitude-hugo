@@ -1,3 +1,8 @@
+ol,
+ul {
+  padding-inline-start: 2em;
+}
+
 .prism :nth-child(7n + 1) {
   color: var(--base08);
 }
