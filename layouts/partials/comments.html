@@ -1,14 +1,14 @@
 <section id="section-comments">
   <h2>Comments</h2>
-  <comments-root
+  <sz-root
     src="{{ .Site.Params.commentsServer }}/comments/{{ .File.ContentBaseName }}"
   >
     <noscript>JavaScript needed here.</noscript>
-  </comments-root>
+  </sz-root>
 </section>
 
 <script type="module">
-  import "{{ .Site.Params.commentsServer }}/js/comments/root_element.js";
+  import "{{ .Site.Params.commentsServer }}/js/senfdazu/root_element.js";
   import BaseElement from "{{ .Site.Params.commentsServer }}/js/simple/base_element.js";
   import md from "/js/md.js";
 

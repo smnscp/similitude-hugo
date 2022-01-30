@@ -4,14 +4,14 @@
     padding-right: 2rem;
   }
 }
-comments-root ol.comments-list {
-  counter-reset: comments-item;
+ol.sz-list {
+  counter-reset: sz-item;
 }
-comments-root ol.comments-list > li {
-  counter-increment: comments-item;
+ol.sz-list > li {
+  counter-increment: sz-item;
 }
-comments-root ol.comments-list > li::marker {
-  content: counters(comments-item, ".") ". ";
+ol.sz-list > li::marker {
+  content: counters(sz-item, ".") ". ";
   color: var(--base04);
   font-size: smaller;
   font-weight: bold;
