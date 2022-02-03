@@ -1,7 +1,7 @@
-baseURL = "http://sim.ilitu.de/"
+baseURL = "https://sim.ilitu.de/"
 languageCode = "en-us"
 title = "similitude"
 theme = "base16"
 markup.highlight.noClasses = false
 [params]
-	commentsServer = "http://localhost:8000"
+	commentsServer = "https://comments.sim.ilitu.de" #"http://localhost:8000"
