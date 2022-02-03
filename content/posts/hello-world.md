@@ -1,6 +1,6 @@
 ---
 title: "Hello World!"
-date: 2022-02-03T22:22:23+2:00
+date: 2022-02-03T22:22:23+01:00
 draft: false
 comments: true
 ---
