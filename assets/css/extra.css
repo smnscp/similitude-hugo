@@ -26,6 +26,7 @@ ul {
 }
 
 .homepage h1.site-title {
+  color: var(--base05);
   background: url("/img/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
