@@ -1,9 +1,3 @@
-{{ $base16Css := resources.Get "css/base16.css" }}
-{{ $extra := resources.Get "css/extra.css" }}
-{{ $comments := resources.Get "css/comments.css" }}
-{{ $cssBundle := slice $base16Css $extra $comments | resources.Concat "css/style.css" }}
-{{ $permalink := $cssBundle.Permalink }}
-
 <h1 class="site-title">
   <span class="base05">[</span><span
     class="prism"><b>sim</b><b>i</b><b>l</b><b>i</b><b>t</b><b>u</b><b>de</b></span><span
