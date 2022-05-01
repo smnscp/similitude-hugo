@@ -1,9 +1,3 @@
-@media (max-width: 52em) {
-  section#section-comments {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
 ol.sz-list {
   counter-reset: sz-item;
 }

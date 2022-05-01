@@ -27,8 +27,7 @@
   <section class="body" itemprop="articleBody">
     {{ .Content }}
   </section>
-</article>
-
 {{ if .Page.Params.comments }}
   {{ partial "comments.html" . }}
 {{ end }}
+</article>
