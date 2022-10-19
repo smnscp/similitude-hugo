@@ -1,8 +1,3 @@
 baseURL = "http://localhost:1313/"
-languageCode = "en-us"
-title = "similitude"
-theme = "base16"
-[markup.highlight]
-	noClasses = false
 [params]
 	commentsServer = "http://localhost:8000"
