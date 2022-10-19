@@ -1,3 +1,5 @@
 node_modules
 public
+static/fonts
 .hugo_build.lock
+.DS_Store

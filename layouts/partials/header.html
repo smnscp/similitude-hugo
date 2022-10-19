@@ -16,10 +16,7 @@
 {{ $comments := resources.Get "css/comments.css" }}
 {{ $cssBundle := slice $base16Css $extra $comments | resources.Concat "css/style.css" }}
 <link rel="stylesheet" href="{{ $cssBundle.Permalink | relURL }}" type="text/css">
-<link rel="stylesheet" href="/fonts/400.css" type="text/css">
-<link rel="stylesheet" href="/fonts/400-italic.css" type="text/css">
-<link rel="stylesheet" href="/fonts/700.css" type="text/css">
-<link rel="stylesheet" href="/fonts/700-italic.css" type="text/css">
+<link rel="stylesheet" href="{{ "fonts/fonts.css" | relURL }}" type="text/css">
 <link rel="alternate" href="{{ "index.xml" | relURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
 <link rel="openid.server" href="https://id.sim.ilitu.de/">
 <link rel="openid2.provider" href="https://id.sim.ilitu.de/">

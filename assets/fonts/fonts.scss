@@ -1,0 +1,6 @@
+@use "../../node_modules/@fontsource/source-code-pro/scss/mixins.scss" as Mono;
+
+@include Mono.fontFace($fontDir: "./files", $weight: 400);
+@include Mono.fontFace($fontDir: "./files", $weight: 700);
+@include Mono.fontFace($fontDir: "./files", $weight: 400, $style: italic);
+@include Mono.fontFace($fontDir: "./files", $weight: 700, $style: italic);
