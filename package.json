@@ -1,0 +1,7 @@
+{
+  "name": "similitude-hugo",
+  "version": "0.1.0",
+  "dependencies": {
+    "@fontsource/source-code-pro": "latest"
+  }
+}
