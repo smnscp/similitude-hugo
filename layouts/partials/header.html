@@ -20,9 +20,10 @@
 <link rel="pingback" href="https://webmention.io/sim.ilitu.de/xmlrpc">
 <title>{{ with .Title }}{{.}} - {{ end }}{{ .Site.Title }}</title>
 </head>
-<body>
+<body class="l-page-center">
 
 <header>
+  <section class="site-header">
   <div class="container clearfix">
     <a class="path" href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a><span class="caret"># _</span>
     <div class="right">
@@ -31,7 +32,5 @@
         <a class="path" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
       {{ end }}
     </div>
-  </div>
+  </section>
 </header>
-
-<div class="container">
