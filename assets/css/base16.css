@@ -1,13 +1,5 @@
 /* General Page Layout */
 
-div.right {
-  float:right;
-}
-
-div.clearfix {
-  overflow: auto;
-}
-
 article.single section,
 .article-list article {
   background-color: var(--base07);
