@@ -359,17 +359,3 @@ article.single th {
 article.single td {
   vertical-align: top;
 }
-
-article.single blockquote {
-  margin-left: 2rem;
-  margin-right: 3rem;
-  padding-left: 1rem;
-  border-left: 5px solid var(--base0c);
-}
-
-article.single hr {
-  border: 0;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: var(--base04);
-}
