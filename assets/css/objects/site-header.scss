@@ -1,5 +1,22 @@
 .site-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 1ch;
+
+  > :first-child {
+    position: relative;
+    max-inline-size: none;
+    flex-grow: 999;
+
+    a:first-child::before {
+      content: '';
+      position: absolute;
+      inset-inline: 0;
+      inset-block: -0.25em;
+      background-image: url('/img/logo.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+  }
 }

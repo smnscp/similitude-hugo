@@ -37,25 +37,3 @@ ul {
   text-shadow: 0 0 0.1em var(--base00);
   white-space: nowrap;
 }
-
-header a.path {
-  text-decoration: none;
-}
-
-body > header:first-child > .container:first-child {
-  position: relative;
-  overflow: visible;
-}
-
-body > header:first-child > .container:first-child a:first-child::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: -0.25em;
-  bottom: -0.25em;
-  width: 2em;
-  background-image: url("/img/logo.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-}
