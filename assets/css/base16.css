@@ -1,4 +1,12 @@
 /* General Page Layout */
+body {
+  padding-block: var(--spacing-block);
+}
+
+body > header,
+body > footer {
+  --spacing-sectioning: var(--spacing-block);
+}
 
 article.single section,
 .article-list article {
@@ -6,8 +14,6 @@ article.single section,
   color: var(--base00);
   padding-left: 8rem;
   padding-right: 8rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 @media (max-width: 52em) {
@@ -16,18 +22,6 @@ article.single section,
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}
-
-header,
-footer {
-  background-color: var(--base01);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-header {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
 }
 
 @media (max-width: 52em) {
@@ -39,8 +33,6 @@ header {
 }
 
 footer {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
   text-align: center;
 }
 
