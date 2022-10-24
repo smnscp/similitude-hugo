@@ -18,7 +18,8 @@ article.single section,
   }
 }
 
-header, footer {
+header,
+footer {
   background-color: var(--base01);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -54,9 +55,14 @@ footer {
 
 /* Typography */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.25;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 * + :is(h1, h2, h3, h4, h5, h6) {
@@ -189,7 +195,9 @@ footer a {
   color: var(--base0e);
 }
 
-.article-list article section.summary a { color: var(--base0f); }
+.article-list article section.summary a {
+  color: var(--base0f);
+}
 
 /* Pagination */
 
@@ -226,7 +234,8 @@ article.single .meta .key {
   color: var(--base03);
 }
 
-article.single .meta .val, article.single .meta .val a {
+article.single .meta .val,
+article.single .meta .val a {
   color: var(--base0e);
 }
 
@@ -264,14 +273,28 @@ article.single section.body {
 
 /* Highlight Colors */
 
-article.single section.body h1 { color: var(--base0d); }
-article.single section.body h2 { color: var(--base0b); }
-article.single section.body h3 { color: var(--base09); }
-article.single section.body h4 { color: var(--base08); }
-article.single section.body h5 { color: var(--base02); }
-article.single section.body h6 { color: var(--base03); }
+article.single section.body h1 {
+  color: var(--base0d);
+}
+article.single section.body h2 {
+  color: var(--base0b);
+}
+article.single section.body h3 {
+  color: var(--base09);
+}
+article.single section.body h4 {
+  color: var(--base08);
+}
+article.single section.body h5 {
+  color: var(--base02);
+}
+article.single section.body h6 {
+  color: var(--base03);
+}
 
-article.single section.body a { color: var(--base0f); }
+article.single section.body a {
+  color: var(--base0f);
+}
 
 /* Article Elements */
 
@@ -294,7 +317,8 @@ article.single p code {
   color: var(--base07);
 }
 
-article.single figure, article.single div.highlight {
+article.single figure,
+article.single div.highlight {
   box-sizing: border-box;
   max-width: 52rem;
   width: 52rem;
@@ -306,7 +330,8 @@ article.single figure, article.single div.highlight {
 }
 
 @media (max-width: 52em) {
-  article.single figure, article.single div.highlight {
+  article.single figure,
+  article.single div.highlight {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -341,7 +366,7 @@ article.single table {
 
 article.single th,
 article.single td {
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
   line-height: inherit;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -358,7 +383,9 @@ article.single th {
   vertical-align: bottom;
 }
 
-article.single td { vertical-align: top }
+article.single td {
+  vertical-align: top;
+}
 
 article.single blockquote {
   margin-left: 2rem;
