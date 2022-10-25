@@ -36,23 +36,13 @@ body > footer {
 /* 404 Page Layout */
 
 .page-not-found {
+  text-align: center;
+  font-size: max(var(--scale-3), 4vw);
+  color: var(--base04);
+
   h1 {
-    text-align: center;
-    font-size: 5em;
-    @media (max-width: $break) {
-      font-size: 3em;
-    }
-  }
-
-  h2 {
-    text-align: center;
-    font-size: 3em;
-    color: var(--base04);
-    margin-block-end: 4rem;
-
-    @media (max-width: $break) {
-      font-size: 2em;
-    }
+    font-size: 200%;
+    color: var(--base05);
   }
 }
 
