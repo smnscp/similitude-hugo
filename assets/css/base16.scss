@@ -238,8 +238,6 @@ article.single {
   }
 
   p code {
-    padding: 0.2em 0.5em;
-    border-radius: 3px;
     background: var(--base03);
     color: var(--base07);
   }
@@ -247,7 +245,6 @@ article.single {
   figure,
   div.highlight {
     box-sizing: border-box;
-    max-inline-size: $break;
     inline-size: $break;
     margin-inline: -$space-lg;
     margin-block-end: $space-xs;
@@ -262,7 +259,6 @@ article.single {
   }
 
   figure img {
-    max-inline-size: 100%;
     inline-size: 100%;
     border-radius: 3px;
   }
@@ -282,7 +278,6 @@ article.single {
   table {
     border-collapse: separate;
     border-spacing: 0;
-    max-inline-size: 100%;
     inline-size: 100%;
   }
 
