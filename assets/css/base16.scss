@@ -1,4 +1,14 @@
 $break: 52rem;
+$space-lg: 8rem;
+$space-md: 4rem;
+$space-sm: 2rem;
+$space-xs: 1rem;
+
+@mixin slim-pad {
+  @media (max-width: $break) {
+    padding-inline: $space-sm;
+  }
+}
 
 /* General Page Layout */
 body {
@@ -7,10 +17,8 @@ body {
   > header,
   > footer {
     --spacing-sectioning: var(--spacing-block);
-    @media (max-width: $break) {
-      padding-inline: 2rem;
-      margin-block: 0;
-    }
+
+    @include slim-pad;
   }
 }
 
@@ -49,27 +57,21 @@ body > footer {
 /* Homepage Layout */
 
 .homepage {
-  @media (max-width: $break) {
-    margin-block-end: 2rem;
-  }
-
   h1.site-title {
     text-align: center;
-    font-size: 5em;
+    font-size: var(--scale-7);
     color: var(--base0c);
 
     @media (max-width: $break) {
-      font-size: 3em;
+      font-size: var(--scale-5);
     }
   }
 
   h1.headline {
-    font-size: 3em;
+    font-size: var(--scale-5);
     color: var(--base0a);
 
-    @media (max-width: $break) {
-      padding-inline: 2rem;
-    }
+    @include slim-pad;
   }
 
   .hero-logo img {
@@ -78,7 +80,7 @@ body > footer {
 
   section.categories,
   section.tags {
-    padding-inline: 2rem;
+    padding-inline: $space-sm;
   }
 
   .category,
@@ -97,20 +99,18 @@ body > footer {
 
 .article-list {
   h1.list-title {
-    font-size: 3em;
+    font-size: var(--scale-5);
     color: var(--base0a);
   }
 
   article {
     background-color: var(--base07);
     color: var(--base00);
-    padding-inline: 8rem;
-    padding-block: 4rem;
-    margin-block-end: 4rem;
+    padding-inline: $space-lg;
+    padding-block: $space-md;
+    margin-block-end: $space-md;
 
-    @media (max-width: $break) {
-      padding-inline: 2rem;
-    }
+    @include slim-pad;
 
     h2.headline,
     h2.headline a {
@@ -119,7 +119,7 @@ body > footer {
     }
 
     .meta {
-      margin-block-end: 1rem;
+      margin-block-end: $space-xs;
 
       .key {
         color: var(--base03);
@@ -175,30 +175,26 @@ article.single {
       color: var(--base0e);
     }
 
-    @media (max-width: $break) {
-      padding-inline: 2rem;
-    }
+    @include slim-pad;
   }
 
   h1.headline {
     margin-block-start: 0;
-    font-size: 3em;
+    font-size: var(--scale-5);
     color: var(--base0a);
 
-    @media (max-width: $break) {
-      padding-inline: 2rem;
-    }
+    @include slim-pad;
   }
 
   section.body {
     background-color: var(--base07);
     color: var(--base00);
-    padding-inline: 8rem;
-    padding-block: 4rem;
+    padding-inline: $space-lg;
+    padding-block: $space-md;
 
+    @include slim-pad;
     @media (max-width: $break) {
-      padding-inline: 2rem;
-      padding-block: 2rem;
+      padding-block: $space-sm;
     }
   }
 
@@ -235,10 +231,10 @@ article.single {
   }
 
   pre {
-    margin-block: 0 1rem;
+    margin-block: 0 $space-xs;
     overflow-x: scroll;
     border-radius: 3px;
-    padding: 2rem;
+    padding: $space-sm;
   }
 
   p code {
@@ -253,9 +249,9 @@ article.single {
     box-sizing: border-box;
     max-inline-size: $break;
     inline-size: $break;
-    margin-inline: -8rem;
-    margin-block-end: 1rem;
-    padding: 1em;
+    margin-inline: -$space-lg;
+    margin-block-end: $space-xs;
+    padding: $space-xs;
     background-color: var(--base01);
     
     @media (max-width: $break) {
@@ -272,7 +268,7 @@ article.single {
   }
 
   figure figcaption {
-    margin-block-start: 1rem;
+    margin-block-start: $space-xs;
   }
 
   figure figcaption h4 {
@@ -292,8 +288,8 @@ article.single {
 
   th,
   td {
-    padding: 0.25rem 1rem;
-    line-height: inherit;
+    padding-block: 0.25rem;
+    padding-inline: $space-xs;
     border-block-end: 1px solid var(--base04);
   }
 
