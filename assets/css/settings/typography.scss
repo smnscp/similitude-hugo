@@ -1,0 +1,10 @@
+@use "../../../lib/stylament/css/a.settings/a.basic-tokens/a.typography/a.modular-scale" with (
+  $max: 9
+);
+@use "../../../lib/stylament/css/a.settings/a.basic-tokens/a.typography/b.line-height" with (
+  $max: 9
+);
+@use "../../../lib/stylament/css/a.settings/a.basic-tokens/a.typography/c.font-families";
+@use "../../../lib/stylament/css/a.settings/a.basic-tokens/a.typography/d.font-weights";
+@use "../../../lib/stylament/css/a.settings/a.basic-tokens/a.typography/e.letter-spacing";
+@use "../../../lib/stylament/css/a.settings/a.basic-tokens/a.typography/f.measure";
