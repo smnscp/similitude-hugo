@@ -1,4 +1,4 @@
-@use "../../lib/stylament/css/a.settings" with (
+@use "stylament/css/a.settings" with (
   $config-custom: (
     modular-scale: (
       max: 9,
@@ -6,14 +6,14 @@
   ),
 );
 @use "settings";
-@use "../../lib/stylament/css/b.tools";
-@use "../../lib/stylament/css/c.generic";
-@use "../../lib/stylament/css/d.elements";
+@use "stylament/css/b.tools";
+@use "stylament/css/c.generic";
+@use "stylament/css/d.elements";
 @use "elements";
-@use "../../lib/stylament/css/e.objects";
+@use "stylament/css/e.objects";
 @use "objects";
-@use "../../lib/stylament/css/f.components";
-@use "../../lib/stylament/css/g.utilities";
+@use "stylament/css/f.components";
+@use "stylament/css/g.utilities";
 @use "utilities";
 
 @use "base16";

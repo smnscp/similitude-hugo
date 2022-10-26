@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "clean": "rm -rf public",
-    "mkcss": "sass --no-source-map assets/css/index.scss static/css/style.css",
+    "mkcss": "sass --no-source-map --load-path=lib assets/css/index.scss static/css/style.css",
     "start": "NODE_ENV=development npm run clean && npm run watchcss & npm run devserver",
     "build": "NODE_ENV=production npm run clean && npm run mkcss && hugo --gc --minify",
     "watchcss": "npm run mkcss -- --watch",
