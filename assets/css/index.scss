@@ -11,12 +11,14 @@
 @use "stylament/css/elements" as el;
 @use "elements";
 @use "stylament/css/objects" as ob;
+
+/// @TODO: Dissolve.
+@use "base16";
+
 @use "objects";
 @use "stylament/css/utilities" as ut;
 @use "utilities";
 
-@use "base16";
-@use "extra";
 @use "comments";
 
 @use "fonts";
