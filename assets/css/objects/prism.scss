@@ -1,0 +1,23 @@
+.prism {
+  :nth-child(7n + 1) {
+    color: var(--base08);
+  }
+  :nth-child(7n + 2) {
+    color: var(--base09);
+  }
+  :nth-child(7n + 3) {
+    color: var(--base0a);
+  }
+  :nth-child(7n + 4) {
+    color: var(--base0b);
+  }
+  :nth-child(7n + 5) {
+    color: var(--base0c);
+  }
+  :nth-child(7n + 6) {
+    color: var(--base0d);
+  }
+  :nth-child(7n + 7) {
+    color: var(--base0e);
+  }
+}

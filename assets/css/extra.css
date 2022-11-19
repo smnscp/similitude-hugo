@@ -1,25 +1,3 @@
-.prism :nth-child(7n + 1) {
-  color: var(--base08);
-}
-.prism :nth-child(7n + 2) {
-  color: var(--base09);
-}
-.prism :nth-child(7n + 3) {
-  color: var(--base0a);
-}
-.prism :nth-child(7n + 4) {
-  color: var(--base0b);
-}
-.prism :nth-child(7n + 5) {
-  color: var(--base0c);
-}
-.prism :nth-child(7n + 6) {
-  color: var(--base0d);
-}
-.prism :nth-child(7n + 7) {
-  color: var(--base0e);
-}
-
 .homepage h1.site-title {
   color: var(--base05);
   background: url("/img/logo.svg");
