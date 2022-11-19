@@ -1,9 +1,11 @@
 @use "stylament/css/axioms" as ax with (
   $config-custom: (
-    modular-scale: (
-      max: 9,
+    typography: (
+      scale: (
+        max: 9,
+      ),
     ),
-  ),
+  )
 );
 @use "axioms";
 @use "stylament/css/elements" as el;
