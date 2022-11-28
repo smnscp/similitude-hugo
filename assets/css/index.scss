@@ -1,13 +1,5 @@
-@use "stylament/css/axioms" as ax with (
-  $config-custom: (
-    typography: (
-      scale: (
-        max: 9,
-      ),
-    ),
-  )
-);
-@use "axioms";
+@use "axioms/config";
+@use "stylament/css/axioms" with ($config-custom: config.$config);
 @use "stylament/css/elements" as el;
 @use "elements";
 @use "stylament/css/objects" as ob;

@@ -20,13 +20,13 @@ body {
 
     @include slim-pad;
   }
-}
-
-body > footer {
-  text-align: center;
-  color: var(--base03);
-  > * {
-    color: inherit;
+  
+  > footer {
+    text-align: center;
+    color: var(--color-base03);
+    > * {
+      color: inherit;
+    }
   }
 }
 
@@ -46,11 +46,11 @@ body > footer {
 .page-not-found {
   text-align: center;
   font-size: max(var(--scale-3), 4vw);
-  color: var(--base04);
+  color: var(--color-base04);
 
   h1 {
     font-size: 200%;
-    color: var(--base05);
+    color: var(--color-base05);
   }
 }
 
@@ -60,7 +60,7 @@ body > footer {
   h1.site-title {
     text-align: center;
     font-size: var(--scale-7);
-    color: var(--base0c);
+    color: var(--color-base0c);
 
     @media (max-width: $break) {
       font-size: var(--scale-5);
@@ -69,7 +69,7 @@ body > footer {
 
   h1.headline {
     font-size: var(--scale-5);
-    color: var(--base0a);
+    color: var(--color-base0a);
 
     @include slim-pad;
   }
@@ -87,7 +87,7 @@ body > footer {
   .category a,
   .tag,
   .tag a {
-    color: var(--base0e);
+    color: var(--color-base0e);
   }
 
   .tag {
@@ -100,12 +100,12 @@ body > footer {
 .article-list {
   h1.list-title {
     font-size: var(--scale-5);
-    color: var(--base0a);
+    color: var(--color-base0a);
   }
 
   article {
-    background-color: var(--base07);
-    color: var(--base00);
+    background-color: var(--color-base07);
+    color: var(--color-base00);
     padding-inline: $space-lg;
     padding-block: $space-md;
     margin-block-end: $space-md;
@@ -115,24 +115,24 @@ body > footer {
     h2.headline,
     h2.headline a {
       margin-block-start: 0;
-      color: var(--base0d);
+      color: var(--color-base0d);
     }
 
     .meta {
       margin-block-end: $space-xs;
 
       .key {
-        color: var(--base03);
+        color: var(--color-base03);
       }
 
       .val,
       .val a {
-        color: var(--base0e);
+        color: var(--color-base0e);
       }
     }
 
     section.summary a {
-      color: var(--base0f);
+      color: var(--color-base0f);
     }
   }
 }
@@ -143,11 +143,11 @@ nav.paginator {
   text-align: center;
 
   a {
-    color: var(--base0e);
+    color: var(--color-base0e);
   }
 
   .faded {
-    color: var(--base02);
+    color: var(--color-base02);
   }
 
   .nav-prev {
@@ -167,12 +167,12 @@ article.single {
     text-align: right;
 
     .key {
-      color: var(--base03);
+      color: var(--color-base03);
     }
 
     .val,
     .val a {
-      color: var(--base0e);
+      color: var(--color-base0e);
     }
 
     @include slim-pad;
@@ -181,14 +181,14 @@ article.single {
   h1.headline {
     margin-block-start: 0;
     font-size: var(--scale-5);
-    color: var(--base0a);
+    color: var(--color-base0a);
 
     @include slim-pad;
   }
 
   section.body {
-    background-color: var(--base07);
-    color: var(--base00);
+    background-color: var(--color-base07);
+    color: var(--color-base00);
     padding-inline: $space-lg;
     padding-block: $space-md;
 
@@ -201,26 +201,26 @@ article.single {
   /* Highlight Colors */
   section.body {
     h1 {
-      color: var(--base0d);
+      color: var(--color-base0d);
     }
     h2 {
-      color: var(--base0b);
+      color: var(--color-base0b);
     }
     h3 {
-      color: var(--base09);
+      color: var(--color-base09);
     }
     h4 {
-      color: var(--base08);
+      color: var(--color-base08);
     }
     h5 {
-      color: var(--base02);
+      color: var(--color-base02);
     }
     h6 {
-      color: var(--base03);
+      color: var(--color-base03);
     }
 
     a {
-      color: var(--base0f);
+      color: var(--color-base0f);
     }
   }
 
@@ -238,18 +238,18 @@ article.single {
   }
 
   p code {
-    background: var(--base03);
-    color: var(--base07);
+    background: var(--color-base03);
+    color: var(--color-base07);
   }
 
   figure,
   div.highlight {
     box-sizing: border-box;
-    inline-size: $break;
+    max-inline-size: $break;
     margin-inline: -$space-lg;
     margin-block-end: $space-xs;
     padding: $space-xs;
-    background-color: var(--base01);
+    background-color: var(--color-base01);
     
     @media (max-width: $break) {
       inline-size: 100%;
@@ -272,7 +272,7 @@ article.single {
     text-align: center;
     font-style: italic;
     font-weight: normal;
-    color: var(--base07);
+    color: var(--color-base07);
   }
 
   table {
@@ -285,7 +285,7 @@ article.single {
   td {
     padding-block: 0.25rem;
     padding-inline: $space-xs;
-    border-block-end: 1px solid var(--base04);
+    border-block-end: 1px solid var(--color-base04);
   }
 
   tr:last-child td {

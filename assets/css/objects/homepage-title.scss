@@ -1,5 +1,5 @@
 .homepage h1.site-title {
-  color: var(--base05);
+  color: var(--color-base05);
   background: url("/img/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -7,6 +7,6 @@
   line-height: 3em;
   padding: 0;
   text-align: left;
-  text-shadow: 0 0 0.1em var(--base00);
+  text-shadow: 0 0 0.1em var(--color-base00);
   white-space: nowrap;
 }
