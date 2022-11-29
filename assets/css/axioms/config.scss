@@ -1,4 +1,16 @@
 $config: (
+  layout: (
+    length: (
+      min: 1,
+      max: 16,
+      line: 2,
+    ),
+    container: (
+      individuals: (
+        page: "var(--container-lg)",
+      ),
+    ),
+  ),
   typography: (
     font-families: (
       body: "var(--font-mono)",

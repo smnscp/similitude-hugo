@@ -1,8 +1,8 @@
-$break: 52rem;
-$space-lg: 8rem;
-$space-md: 4rem;
-$space-sm: 2rem;
-$space-xs: 1rem;
+$break: var(--container-page);
+$space-lg: var(--length-l8);
+$space-md: var(--length-l4);
+$space-sm: var(--length-l2);
+$space-xs: var(--length-l1);
 
 @mixin slim-pad {
   @media (max-width: $break) {
