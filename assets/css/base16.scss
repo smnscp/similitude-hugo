@@ -31,19 +31,6 @@ body {
   }
 }
 
-/* 404 Page Layout */
-
-.page-not-found {
-  text-align: center;
-  font-size: max(var(--scale-3), 4vw);
-  color: var(--color-base04);
-
-  h1 {
-    font-size: 200%;
-    color: var(--color-base05);
-  }
-}
-
 /* Post List Layout */
 
 .article-list {

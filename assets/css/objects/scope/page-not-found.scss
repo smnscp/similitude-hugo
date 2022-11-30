@@ -1,0 +1,11 @@
+/// 404 Page Layout
+.page-not-found {
+  text-align: center;
+  font-size: max(var(--scale-3), 4vi);
+  color: var(--color-base04);
+
+  h1 {
+    font-size: 200%;
+    color: var(--color-base05);
+  }
+}
