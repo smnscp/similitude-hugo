@@ -1,0 +1,20 @@
+@use "sass:map";
+@use "stylament/css/axioms/properties/basic/layout/container";
+
+$page: map.get(container.$sizes, page);
+$space-lg: var(--length-l8);
+$space-md: var(--length-l4);
+$space-sm: var(--length-l2);
+$space-xs: var(--length-l1);
+
+@mixin narrow {
+  @media (max-width: $page) {
+    @content;
+  }
+}
+
+@mixin slim-pad {
+  @include narrow {
+    padding-inline: $space-sm;
+  }
+}
