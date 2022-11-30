@@ -44,47 +44,6 @@ body {
   }
 }
 
-/* Homepage Layout */
-
-.homepage {
-  h1.site-title {
-    text-align: center;
-    font-size: var(--scale-7);
-    color: var(--color-base0c);
-
-    @include narrow {
-      font-size: var(--scale-5);
-    }
-  }
-
-  h1.headline {
-    font-size: var(--scale-5);
-    color: var(--color-base0a);
-
-    @include slim-pad;
-  }
-
-  .hero-logo img {
-    inline-size: 100%;
-  }
-
-  section.categories,
-  section.tags {
-    padding-inline: $space-sm;
-  }
-
-  .category,
-  .category a,
-  .tag,
-  .tag a {
-    color: var(--color-base0e);
-  }
-
-  .tag {
-    margin-inline-end: 2em;
-  }
-}
-
 /* Post List Layout */
 
 .article-list {

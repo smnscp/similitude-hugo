@@ -1,12 +1,48 @@
-.homepage h1.site-title {
-  color: var(--color-base05);
-  background: url("/img/logo.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 2.4em;
-  line-height: 3em;
-  padding: 0;
-  text-align: left;
-  text-shadow: 0 0 0.1em var(--color-base00);
-  white-space: nowrap;
+@use "../../axioms/mixins" as *;
+
+/// Homepage Layout
+.homepage {
+  h1.site-title {
+    font-size: var(--scale-7);
+    color: var(--color-base05);
+    background: url("/img/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 2.4em;
+    line-height: 3em;
+    padding: 0;
+    text-shadow: 0 0 0.1em var(--color-base00);
+    white-space: nowrap;
+  
+    @include narrow {
+      font-size: var(--scale-5);
+    }
+  }
+
+  h1.headline {
+    font-size: var(--scale-5);
+    color: var(--color-base0a);
+
+    @include slim-pad;
+  }
+
+  .hero-logo img {
+    inline-size: 100%;
+  }
+
+  section.categories,
+  section.tags {
+    padding-inline: $space-sm;
+  }
+
+  .category,
+  .category a,
+  .tag,
+  .tag a {
+    color: var(--color-base0e);
+  }
+
+  .tag {
+    margin-inline-end: 2em;
+  }
 }
