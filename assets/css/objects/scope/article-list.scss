@@ -1,0 +1,42 @@
+@use "../../axioms/mixins" as *;
+
+/// Post List Layout
+.s-article-list {
+  h1.list-title {
+    font-size: var(--scale-5);
+    color: var(--color-base0a);
+  }
+
+  article {
+    background-color: var(--color-base07);
+    color: var(--color-base00);
+    padding-inline: $space-lg;
+    padding-block: $space-md;
+    margin-block-end: $space-md;
+
+    @include slim-pad;
+
+    h2.headline,
+    h2.headline a {
+      margin-block-start: 0;
+      color: var(--color-base0d);
+    }
+
+    .meta {
+      margin-block-end: $space-xs;
+
+      .key {
+        color: var(--color-base03);
+      }
+
+      .val,
+      .val a {
+        color: var(--color-base0e);
+      }
+    }
+
+    section.summary a {
+      color: var(--color-base0f);
+    }
+  }
+}
