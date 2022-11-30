@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 {{ $paginator := .Paginator (or .Site.Params.paginate 3) }}
-<main role="main" class="article-list">
+<main class="s-article-list">
   <h1 class="list-title">{{ .Title }}</h1>
   {{ range $paginator.Pages }}
     {{ partial "article-list-item.html" . }}

@@ -1,7 +1,7 @@
 @use "../../axioms/mixins" as *;
 
 /// Homepage Layout
-.homepage {
+.s-homepage {
   h1.site-title {
     font-size: var(--scale-7);
     color: var(--color-base05);
