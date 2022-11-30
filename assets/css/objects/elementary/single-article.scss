@@ -1,0 +1,145 @@
+@use "../../axioms/mixins" as *;
+
+/// Single Post Layout
+article.e-single-article {
+  .meta {
+    font-size: 0.9em;
+    text-align: right;
+
+    .key {
+      color: var(--color-base03);
+    }
+
+    .val,
+    .val a {
+      color: var(--color-base0e);
+    }
+
+    @include slim-pad;
+  }
+
+  h1.headline {
+    margin-block-start: 0;
+    font-size: var(--scale-5);
+    color: var(--color-base0a);
+
+    @include slim-pad;
+  }
+
+  section.body {
+    background-color: var(--color-base07);
+    color: var(--color-base00);
+    padding-inline: $space-lg;
+    padding-block: $space-md;
+
+    @include slim-pad;
+
+    @include narrow {
+      padding-block: $space-sm;
+    }
+  }
+
+  /* Highlight Colors */
+  section.body {
+    h1 {
+      color: var(--color-base0d);
+    }
+    h2 {
+      color: var(--color-base0b);
+    }
+    h3 {
+      color: var(--color-base09);
+    }
+    h4 {
+      color: var(--color-base08);
+    }
+    h5 {
+      color: var(--color-base02);
+    }
+    h6 {
+      color: var(--color-base03);
+    }
+
+    a {
+      color: var(--color-base0f);
+    }
+  }
+
+  /* Article Elements */
+
+  * {
+    max-inline-size: 100%;
+  }
+
+  pre {
+    margin-block: 0 $space-xs;
+    overflow-x: scroll;
+    border-radius: 3px;
+    padding: $space-sm;
+  }
+
+  p code {
+    background: var(--color-base03);
+    color: var(--color-base07);
+  }
+
+  figure,
+  div.highlight {
+    box-sizing: border-box;
+    max-inline-size: var(--container-page);
+    margin-inline: -$space-lg;
+    margin-block-end: $space-xs;
+    padding: $space-xs;
+    background-color: var(--color-base01);
+
+    @include narrow {
+      inline-size: 100%;
+      margin-inline: 0;
+      border-radius: 3px;
+    }
+  }
+
+  figure img {
+    inline-size: 100%;
+    border-radius: 3px;
+  }
+
+  figure figcaption {
+    margin-block-start: $space-xs;
+  }
+
+  figure figcaption h4 {
+    margin-block-start: 0;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    color: var(--color-base07);
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    inline-size: 100%;
+  }
+
+  th,
+  td {
+    padding-block: 0.25rem;
+    padding-inline: $space-xs;
+    border-block-end: 1px solid var(--color-base04);
+  }
+
+  tr:last-child td {
+    border-block-end: 0;
+  }
+
+  th {
+    text-align: left;
+    font-weight: bold;
+    vertical-align: bottom;
+  }
+
+  td {
+    vertical-align: top;
+  }
+}
