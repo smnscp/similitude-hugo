@@ -1,6 +1,6 @@
-@use "axioms/mixins" as *;
+@use "../axioms/mixins" as *;
 
-/* General Page Layout */
+/// General Page Layout
 body {
   padding-block: var(--spacing-block);
 
