@@ -1,0 +1,20 @@
+/// Pagination
+nav.e-paginator {
+  text-align: center;
+
+  a {
+    color: var(--color-base0e);
+  }
+
+  .faded {
+    color: var(--color-base02);
+  }
+
+  .nav-prev {
+    margin-inline: auto 1%;
+  }
+
+  .nav-next {
+    margin-inline: 1% auto;
+  }
+}
