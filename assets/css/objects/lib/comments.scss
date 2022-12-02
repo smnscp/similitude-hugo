@@ -1,19 +1,23 @@
-article.single section.sz-list {
+section.sz-list {
   counter-reset: sz-item;
   padding: 0 0 0 2.5rem;
-}
-section.sz-list > article {
-  counter-increment: sz-item;
-  display: list-item;
-}
-section.sz-list > article::marker {
-  content: counters(sz-item, ".") ". ";
-  color: var(--color-base04);
-  font-size: smaller;
-  font-weight: bold;
-}
-sz-root, sz-item {
-  --text-color: var(--color-base01);
-  --bg-color: var(--color-base06);
-  --figure-color: var(--color-base07);
+
+  > article {
+    counter-increment: sz-item;
+    display: list-item;
+
+    &::marker {
+      content: counters(sz-item, ".") ". ";
+      color: var(--color-base04);
+      font-size: smaller;
+      font-weight: bold;
+    }
+  }
+  
+  sz-root,
+  sz-item {
+    --text-color: var(--color-base01);
+    --bg-color: var(--color-base06);
+    --figure-color: var(--color-base07);
+  }
 }
