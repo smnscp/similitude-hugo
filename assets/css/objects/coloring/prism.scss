@@ -1,4 +1,6 @@
 .clr-prism {
+  color: var(--color-neutral);
+
   :nth-child(7n + 1) {
     color: var(--color-base08);
   }
