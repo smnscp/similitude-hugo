@@ -10,11 +10,10 @@
   article {
     background-color: var(--color-base07);
     color: var(--color-base00);
-    padding-inline: $space-lg;
     padding-block: $space-md;
     margin-block-end: $space-md;
 
-    @include slim-pad;
+    @include pulled-pad;
 
     h2.headline,
     h2.headline a {

@@ -14,29 +14,19 @@ article.e-single-article {
     .val a {
       color: var(--color-base0e);
     }
-
-    @include slim-pad;
   }
 
   h1.headline {
     margin-block-start: 0;
     font-size: var(--scale-5);
     color: var(--color-base0a);
-
-    @include slim-pad;
   }
 
   section.body {
     background-color: var(--color-base07);
     color: var(--color-base00);
-    padding-inline: $space-lg;
-    padding-block: $space-md;
-
-    @include slim-pad;
-
-    @include narrow {
-      padding-block: $space-sm;
-    }
+    padding-block: var(--spacing-sectioning);
+    @include pulled-pad;
   }
 
   /* Highlight Colors */
@@ -66,10 +56,6 @@ article.e-single-article {
   }
 
   /* Article Elements */
-
-  * {
-    max-inline-size: 100%;
-  }
 
   pre {
     margin-block: 0 $space-xs;

@@ -3,27 +3,20 @@
 /// Homepage Layout
 .s-homepage {
   h1.site-title {
-    font-size: var(--scale-7);
+    font-size: clamp(var(--scale-4), 8vi, var(--scale-7));
     color: var(--color-base05);
     background: url("/img/logo.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 2.4em;
     line-height: 3em;
-    padding: 0;
     text-shadow: 0 0 0.1em var(--color-base00);
     white-space: nowrap;
-  
-    @include narrow {
-      font-size: var(--scale-5);
-    }
   }
 
   h1.headline {
     font-size: var(--scale-5);
     color: var(--color-base0a);
-
-    @include slim-pad;
   }
 
   .hero-logo img {

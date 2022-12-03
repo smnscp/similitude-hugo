@@ -1,0 +1,5 @@
+:where(body.l-page-center) > {
+  :where(header, main, footer) {
+    --container-gutter: 7.5vi;
+  }
+}

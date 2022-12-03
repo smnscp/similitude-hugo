@@ -13,8 +13,7 @@ $space-xs: var(--length-l1);
   }
 }
 
-@mixin slim-pad {
-  @include narrow {
-    padding-inline: $space-sm;
-  }
+@mixin pulled-pad {
+  padding-inline: var(--container-gutter);
+  margin-inline: calc(-1 * var(--container-gutter));
 }
