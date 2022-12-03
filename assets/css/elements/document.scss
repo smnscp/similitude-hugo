@@ -4,6 +4,16 @@
 body {
   padding-block: clamp(0rem, 25vi - 0.25 * $page, var(--spacing-block));
 
+  > main {
+    > hgroup:only-child {
+      text-align: center;
+      font-size: 200%;
+      * {
+        margin: 0;
+      }
+    }
+  }
+
   > header,
   > footer {
     --spacing-sectioning: var(--spacing-block);
