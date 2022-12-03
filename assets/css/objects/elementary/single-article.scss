@@ -29,32 +29,6 @@ article.e-single-article {
     @include pulled-pad;
   }
 
-  /* Highlight Colors */
-  section.body {
-    h1 {
-      color: var(--color-base0d);
-    }
-    h2 {
-      color: var(--color-base0b);
-    }
-    h3 {
-      color: var(--color-base09);
-    }
-    h4 {
-      color: var(--color-base08);
-    }
-    h5 {
-      color: var(--color-base02);
-    }
-    h6 {
-      color: var(--color-base03);
-    }
-
-    a {
-      color: var(--color-base0f);
-    }
-  }
-
   /* Article Elements */
 
   pre {
