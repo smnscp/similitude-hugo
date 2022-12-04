@@ -25,11 +25,13 @@
 <header>
   <section class="site-header">
     <p><a href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a># _</p>
+    {{ with where .Site.RegularPages "Section" "pages" }}
     <nav>
-      {{ range $i, $page := (where .Site.Pages "Section" "pages") }}
+      {{ range $i, $page := . }}
         {{ if not (eq $i 0) }}|{{ end }}
         <a class="path" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
       {{ end }}
     </nav>
+    {{ end }}
   </section>
 </header>
