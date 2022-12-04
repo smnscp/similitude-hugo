@@ -1,10 +1,12 @@
 {{ partial "header.html" . }}
 {{ $paginator := .Paginator (or .Site.Params.paginate 3) }}
 <main class="s-article-list">
-  <h1 class="list-title">{{ .Title }}</h1>
-  {{ range $paginator.Pages }}
-    {{ partial "article-list-item.html" . }}
-  {{ end }}
+  <section>
+    <h1 class="list-title">{{ .Title }}</h1>
+    {{ range $paginator.Pages }}
+      {{ partial "article-list-item.html" . }}
+    {{ end }}
+  </section>
 </main>
 {{ partial "paginator.html" $paginator }}
 {{ partial "footer.html" . }}
