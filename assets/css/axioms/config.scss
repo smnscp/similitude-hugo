@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $config: (
   layout: (
     length: (
@@ -19,7 +21,9 @@ $config: (
     font-weights: (),
     scale: (
       base: 1em,
-      max: 9,
+      // Tritone: √2 ≅ 1.414
+      // https://www.modularscale.com/?1&em&2@2
+      factor: math.pow(2, 0.5),
     ),
   ),
   ui: (

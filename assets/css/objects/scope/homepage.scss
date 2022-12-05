@@ -3,7 +3,7 @@
 /// Homepage Layout
 .s-homepage {
   h1.site-title {
-    font-size: clamp(var(--scale-4), 8vi, var(--scale-7));
+    font-size: clamp(var(--scale-3), 8vi, var(--scale-4));
     background: url("/img/logo.svg");
     background-repeat: no-repeat;
     background-size: contain;
