@@ -17,10 +17,7 @@ article.e-single-article {
   }
 
   section.body {
-    background-color: var(--color-base07);
-    color: var(--color-base00);
-    padding-block: var(--spacing-sectioning);
-    @include pulled-pad;
+    @include article-box;
   }
 
   /* Article Elements */

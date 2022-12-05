@@ -8,12 +8,9 @@
   }
 
   article {
-    background-color: var(--color-base07);
-    color: var(--color-base00);
-    padding-block: $space-md;
-    margin-block-end: $space-md;
+    margin-block: var(--spacing-sectioning);
 
-    @include pulled-pad;
+    @include article-box;    
 
     h2.headline,
     h2.headline a {

@@ -13,7 +13,10 @@ $space-xs: var(--length-l1);
   }
 }
 
-@mixin pulled-pad {
+@mixin article-box {
+  background-color: var(--color-base07);
+  color: var(--color-base00);
+  padding-block: var(--spacing-sectioning);
   padding-inline: var(--container-gutter);
   margin-inline: calc(-1 * var(--container-gutter));
 }
