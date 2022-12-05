@@ -4,7 +4,7 @@
   {{ partial "hero.html" . }}
 
   <section id="sec:recent-posts">
-    <h1 class="headline">Recent Posts</h1>
+    <h2 class="headline">Recent Posts</h2>
     {{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) (or .Site.Params.paginate 3) }}
     <div class="s-article-list">
       {{ range $paginator.Pages }}
@@ -17,13 +17,13 @@
 {{ with .Site.Taxonomies.categories }}
 
   <section class="sec:categories">
-    <h1 class="headline">Categories</h1>
+    <h2 class="headline">Categories</h2>
 
     {{ range $name, $value := . }}
-    <h2 class="category">
+    <h3 class="category">
       <a href="{{ $baseurl }}categories/{{ $name | urlize }}">{{ humanize $name | title }}</a>
       <small>({{ .Count }})</small>
-    </h2>
+    </h3>
     {{ end }}
   </section>
 
@@ -32,7 +32,7 @@
 {{ with .Site.Taxonomies.tags }}
 
   <section class="sec:tags">
-    <h1 class="headline">Tags</h1>
+    <h2 class="headline">Tags</h2>
 
     {{ range $name, $value := . }}
     <span class="tag">
