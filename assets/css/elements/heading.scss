@@ -6,8 +6,8 @@
   * + & {
     margin-block-start: 1em;
   }
-}
 
-h1.headline {
-  color: var(--color-base0a);
+  main > :is(article, section) > & {
+    color: var(--color-heading-0);
+  }
 }
