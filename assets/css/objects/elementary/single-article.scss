@@ -36,18 +36,10 @@ article.e-single-article {
 
   figure,
   div.highlight {
-    box-sizing: border-box;
-    max-inline-size: var(--container-page);
-    margin-inline: -$space-lg;
-    margin-block-end: $space-xs;
-    padding: $space-xs;
+    margin-inline: calc(-1 * var(--container-gutter));
+    margin-block-start: var(--length-l1);
+    padding: var(--length-l1);
     background-color: var(--color-base01);
-
-    @include narrow {
-      inline-size: 100%;
-      margin-inline: 0;
-      border-radius: 3px;
-    }
   }
 
   figure img {
