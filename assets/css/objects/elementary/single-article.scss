@@ -23,10 +23,9 @@ article.e-single-article {
   /* Article Elements */
 
   pre {
-    margin-block: 0 $space-xs;
     overflow-x: scroll;
-    border-radius: 3px;
-    padding: $space-sm;
+    border-radius: var(--radius-xs);
+    padding: var(--spacing-block);
   }
 
   p code {
@@ -37,18 +36,14 @@ article.e-single-article {
   figure,
   div.highlight {
     margin-inline: calc(-1 * var(--container-gutter));
-    margin-block-start: var(--length-l1);
-    padding: var(--length-l1);
+    margin-block-start: var(--spacing-block);
+    padding: var(--spacing-block);
     background-color: var(--color-base01);
   }
 
   figure img {
     inline-size: 100%;
-    border-radius: 3px;
-  }
-
-  figure figcaption {
-    margin-block-start: $space-xs;
+    border-radius: var(--radius-xs);
   }
 
   figure figcaption h4 {
@@ -66,8 +61,6 @@ article.e-single-article {
 
   th,
   td {
-    padding-block: 0.25rem;
-    padding-inline: $space-xs;
     border-block-end: 1px solid var(--color-base04);
   }
 
