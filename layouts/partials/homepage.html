@@ -16,7 +16,7 @@
 
 {{ with .Site.Taxonomies.categories }}
 
-  <section class="sec:categories">
+  <section id="sec:categories">
     <h2 class="headline">Categories</h2>
 
     {{ range $name, $value := . }}
@@ -31,7 +31,7 @@
 
 {{ with .Site.Taxonomies.tags }}
 
-  <section class="sec:tags">
+  <section id="sec:tags">
     <h2 class="headline">Tags</h2>
 
     {{ range $name, $value := . }}
