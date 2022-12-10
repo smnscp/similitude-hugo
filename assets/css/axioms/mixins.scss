@@ -1,6 +1,6 @@
 @mixin article-box {
-  background-color: var(--color-base07);
-  color: var(--color-base00);
+  background-color: var(--color-body-negative);
+  color: var(--color-body);
   padding-block: var(--spacing-sectioning);
   padding-inline: var(--container-gutter);
   margin-inline: calc(-1 * var(--container-gutter));
