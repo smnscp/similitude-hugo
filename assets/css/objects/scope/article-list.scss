@@ -7,11 +7,6 @@
 
     @include article-box;    
 
-    h2.headline,
-    h2.headline a {
-      color: var(--color-base0d);
-    }
-
     .meta {
       .key {
         color: var(--color-base03);
@@ -19,7 +14,7 @@
 
       .val,
       .val a {
-        color: var(--color-base0e);
+        color: var(--color-links-negative);
       }
     }
 
