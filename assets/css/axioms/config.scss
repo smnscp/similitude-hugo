@@ -8,17 +8,19 @@ $config: (
       line: 2,
     ),
     container: (
-      logicals: (
+      logical: (
         page: "md",
       ),
     ),
   ),
   typography: (
-    font-families: (
-      body: "var(--font-mono)",
-      heading: "var(--font-mono)",
+    font-family: (
+      logical: (
+        body: "mono",
+        heading: "mono",
+      ),
     ),
-    font-weights: (),
+    font-weight: (),
     scale: (
       base: 1em,
       // Tritone: √2 ≅ 1.414
@@ -27,46 +29,50 @@ $config: (
     ),
   ),
   ui: (
-    color: (
-      individuals: (
-        base00: #2d2d2d,
-        base01: #393939,
-        base02: #515151,
-        base03: #747369,
-        base04: #a09f93,
-        base05: #d3d0c8,
-        base06: #e8e6df,
-        base07: #f2f0ec,
-        base08: #f2777a,
-        base09: #f99157,
-        base0a: #ffcc66,
-        base0b: #99cc99,
-        base0c: #66cccc,
-        base0d: #6699cc,
-        base0e: #cc99cc,
-        base0f: #d27b53,
-        body: "var(--color-base07)",
-        body-negative: "var(--color-base00)",
-        neutral: "var(--color-base03)",
-        accent: "var(--color-base01)",
-        accent-negative: "var(--color-base07)",
-        heading: "var(--color-body)",
-        heading-0: "var(--color-base0a)",
-        heading-1: "var(--color-base0d)",
-        heading-2: "var(--color-base0b)",
-        heading-3: "var(--color-base09)",
-        heading-4: "var(--color-base08)",
-        heading-5: "var(--color-base02)",
-        heading-6: "var(--color-base03)",
-        links: "var(--color-base0f)",
-        links-negative: "var(--color-base0d)",
-        hr: "var(--color-base04)",
+    stroke: (
+      color: (
+        literal: (
+          blockquote: "var(--color-base0c)",
+        ),
       ),
     ),
-    stroke: (
-      colors: (
-        blockquote: "var(--color-base0c)",
-      ),
+  ),
+  color: (
+    literal: (
+      base00: #2d2d2d,
+      base01: #393939,
+      base02: #515151,
+      base03: #747369,
+      base04: #a09f93,
+      base05: #d3d0c8,
+      base06: #e8e6df,
+      base07: #f2f0ec,
+      base08: #f2777a,
+      base09: #f99157,
+      base0a: #ffcc66,
+      base0b: #99cc99,
+      base0c: #66cccc,
+      base0d: #6699cc,
+      base0e: #cc99cc,
+      base0f: #d27b53,
+    ),
+    logical: (
+      body: "base07",
+      body-negative: "base00",
+      neutral: "base03",
+      accent: "base01",
+      accent-negative: "base07",
+      heading: "body",
+      heading-0: "base0a",
+      heading-1: "base0d",
+      heading-2: "base0b",
+      heading-3: "base09",
+      heading-4: "base08",
+      heading-5: "base02",
+      heading-6: "base03",
+      links: "base0f",
+      links-negative: "base0d",
+      hr: "base04",
     ),
   ),
 );
