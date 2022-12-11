@@ -2,4 +2,8 @@
   :where(header, main, footer) {
     --container-gutter: 7.5vi;
   }
+
+  :where(header, footer) {
+    --container-size: none;
+  }
 }
