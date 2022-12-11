@@ -5,6 +5,7 @@
   }
 
   h1.site-title {
+    font-family: var(--font-mono);
     font-size: clamp(var(--scale-3), 8vi, var(--scale-4));
     background: url("/img/logo.svg");
     background-repeat: no-repeat;
