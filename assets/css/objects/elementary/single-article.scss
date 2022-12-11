@@ -7,7 +7,7 @@ article.e-single-article {
     text-align: right;
 
     .key {
-      color: var(--color-base03);
+      color: var(--color-neutral);
     }
 
     .val,
@@ -28,9 +28,9 @@ article.e-single-article {
     padding: var(--spacing-block);
   }
 
-  p code {
-    background: var(--color-base03);
-    color: var(--color-base07);
+  code {
+    background: var(--color-neutral);
+    color: var(--color-body-negative);
   }
 
   figure,
@@ -38,7 +38,7 @@ article.e-single-article {
     margin-inline: calc(-1 * var(--container-gutter));
     margin-block-start: var(--spacing-block);
     padding: var(--spacing-block);
-    background-color: var(--color-base01);
+    background-color: var(--color-accent);
   }
 
   figure img {
@@ -50,7 +50,7 @@ article.e-single-article {
     text-align: center;
     font-style: italic;
     font-weight: normal;
-    color: var(--color-base07);
+    color: var(--color-body-negative);
   }
 
   table {
@@ -61,7 +61,7 @@ article.e-single-article {
 
   th,
   td {
-    border-block-end: 1px solid var(--color-base04);
+    border-block-end: 1px solid var(--color-neutral);
   }
 
   tr:last-child td {

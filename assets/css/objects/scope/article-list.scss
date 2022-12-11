@@ -9,17 +9,13 @@
 
     .meta {
       .key {
-        color: var(--color-base03);
+        color: var(--color-neutral);
       }
 
       .val,
       .val a {
         color: var(--color-links-negative);
       }
-    }
-
-    section.summary a {
-      color: var(--color-base0f);
     }
   }
 }

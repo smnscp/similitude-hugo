@@ -53,13 +53,14 @@ $config: (
       base0d: #6699cc,
       base0e: #cc99cc,
       base0f: #d27b53,
+      shadow: #00000080,
     ),
     logical: (
       body: "base00",
       body-negative: "base07",
       neutral: "base03",
       accent: "base01",
-      accent-negative: "base07",
+      accent-negative: "base06",
       heading: "body", // default heading color applied to `hgroup p`
       heading-0: "base0a", // highlighted top-level headlines
       heading-1: "base0d",
