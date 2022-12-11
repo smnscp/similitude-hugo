@@ -24,7 +24,7 @@
 
 <header>
   <section class="site-header">
-    <p><a href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a># _</p>
+    <p><a href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a></p>
     {{ with where .Site.RegularPages "Section" "pages" }}
     <nav>
       {{ range $i, $page := . }}
