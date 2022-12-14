@@ -54,8 +54,6 @@ article.e-single-article {
   }
 
   table {
-    border-collapse: separate;
-    border-spacing: 0;
     inline-size: 100%;
   }
 
@@ -66,15 +64,5 @@ article.e-single-article {
 
   tr:last-child td {
     border-block-end: 0;
-  }
-
-  th {
-    text-align: left;
-    font-weight: bold;
-    vertical-align: bottom;
-  }
-
-  td {
-    vertical-align: top;
   }
 }
