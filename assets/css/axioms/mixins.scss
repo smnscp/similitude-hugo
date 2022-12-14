@@ -1,6 +1,6 @@
+@use "stylament/css/objects/coloring/inverted";
 @mixin article-box {
-  background-color: var(--color-body-negative);
-  color: var(--color-body);
+  @extend .clr-inverted;
   padding-block: var(--spacing-sectioning);
   padding-inline: var(--container-gutter);
   margin-inline: calc(-1 * var(--container-gutter));
