@@ -15,15 +15,4 @@
     text-shadow: 0 0 0.1em var(--color-shadow);
     white-space: nowrap;
   }
-
-  .category,
-  .category a,
-  .tag,
-  .tag a {
-    color: var(--color-links-negative);
-  }
-
-  .tag {
-    margin-inline-end: 2em;
-  }
 }
