@@ -5,16 +5,18 @@
 
   <section id="sec:recent-posts">
     <h2 class="headline">Recent Posts</h2>
-    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) (or .Site.Params.paginate 3) }}
+    {{ $paginator := .Paginate
+    (where .Site.RegularPages "Section" "in" .Site.Params.mainSections)
+    (or .Site.Params.paginate 3) }}
     <div class="s-article-list">
       {{ range $paginator.Pages }}
-        {{ partial "article-list-item.html" . }}
+      {{ partial "article-list-item.html" . }}
       {{ end }}
     </div>
     {{ partial "paginator.html" $paginator }}
   </section>
 
-{{ with .Site.Taxonomies.categories }}
+  {{ with .Site.Taxonomies.categories }}
 
   <section id="sec:categories">
     <h2 class="headline">Categories</h2>
@@ -27,9 +29,9 @@
     {{ end }}
   </section>
 
-{{ end }}
+  {{ end }}
 
-{{ with .Site.Taxonomies.tags }}
+  {{ with .Site.Taxonomies.tags }}
 
   <section id="sec:tags">
     <h2 class="headline">Tags</h2>
@@ -42,6 +44,6 @@
     {{ end }}
   </section>
 
-{{ end }}
+  {{ end }}
 
 </main>
