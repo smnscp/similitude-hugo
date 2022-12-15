@@ -21,12 +21,14 @@
   <section id="sec:categories">
     <h2 class="headline">Categories</h2>
 
-    {{ range $name, $value := . }}
-    <h3 class="category">
-      <a href="{{ $baseurl }}categories/{{ $name | urlize }}">{{ humanize $name | title }}</a>
-      <small>({{ .Count }})</small>
-    </h3>
-    {{ end }}
+    <ul class="taxonomy-cloud categories">
+      {{ range $name, $value := . }}
+      <li>
+        <a href="{{ $baseurl }}categories/{{ $name | urlize }}">{{ humanize $name | title }}</a>
+        <small>({{ .Count }})</small>
+      </li>
+      {{ end }}
+    </ul>
   </section>
 
   {{ end }}
@@ -36,12 +38,14 @@
   <section id="sec:tags">
     <h2 class="headline">Tags</h2>
 
-    {{ range $name, $value := . }}
-    <span class="tag">
-      <a href="{{ $baseurl }}tags/{{ $name | urlize }}">{{ $name }}</a>
-      <small>({{ .Count }})</small>
-    </span>
-    {{ end }}
+    <ul class="taxonomy-cloud tags">
+      {{ range $name, $value := . }}
+      <li>
+        <a href="{{ $baseurl }}tags/{{ $name | urlize }}">{{ $name }}</a>
+        <small>({{ .Count }})</small>
+      </li>
+      {{ end }}
+    </ul>
   </section>
 
   {{ end }}
