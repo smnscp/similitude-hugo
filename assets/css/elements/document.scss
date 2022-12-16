@@ -1,12 +1,11 @@
+@use "stylament/css/axioms/tools/mixins/coloring";
 @use "../axioms/mixins" as *;
-@use "../../../lib/stylament/css/objects/coloring/accented";
-@use "../../../lib/stylament/css/objects/coloring/inverted";
 
 /// General Page Layout
 body {
   padding-block: clamp(0rem, (100vi - var(--container-page)) / 4, var(--spacing-block));
   // Invert colors. `@mixin article-box` will revert them again.
-  @extend .clr-inverted;
+  @include coloring.invert;
 
   > main {
     > hgroup:only-child {
@@ -20,7 +19,7 @@ body {
 
   > header,
   > footer {
-    @extend .clr-accented;
+    @include coloring.accent;
     font-family: var(--font-mono);
     --spacing-sectioning: var(--spacing-block);
   }

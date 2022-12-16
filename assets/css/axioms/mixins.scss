@@ -1,6 +1,7 @@
-@use "stylament/css/objects/coloring/inverted";
+@use "stylament/css/axioms/tools/mixins/coloring";
+
 @mixin article-box {
-  @extend .clr-inverted;
+  @include coloring.revert;
   padding-block: var(--spacing-sectioning);
   padding-inline: var(--container-gutter);
   margin-inline: calc(-1 * var(--container-gutter));
