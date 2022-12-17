@@ -1,10 +1,10 @@
-@use "../../axioms/mixins" as *;
+@use "../../axioms/tools/mixins/article";
 
 /// Post List Item
-article.list-item {
+article.e-article-list-item {
   margin-block: var(--spacing-sectioning);
 
-  @include article-box;
+  @include article.box;
 
   .e-meta {
     margin-block-start: 0;

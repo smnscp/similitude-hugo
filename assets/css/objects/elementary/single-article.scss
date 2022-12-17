@@ -1,4 +1,4 @@
-@use "../../axioms/mixins" as *;
+@use "../../axioms/tools/mixins/article";
 
 /// Single Post Layout
 article.e-single-article {
@@ -7,7 +7,7 @@ article.e-single-article {
   }
 
   section.body {
-    @include article-box;
+    @include article.box;
   }
 
   /* Article Elements */

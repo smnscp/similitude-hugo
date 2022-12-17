@@ -1,6 +1,6 @@
 @use "stylament/css/axioms/tools/mixins/coloring";
 
-@mixin article-box {
+@mixin box {
   @include coloring.revert;
   padding-block: var(--spacing-sectioning);
   padding-inline: var(--container-gutter);
