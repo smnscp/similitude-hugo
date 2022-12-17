@@ -1,0 +1,30 @@
+/// Article meta data
+dl.e-meta {
+  font-size: var(--scale-smaller);
+
+  dt,
+  dd {
+    display: inline;
+    margin-inline: 0;
+  }
+
+  dt {
+    color: var(--color-neutral);
+
+    &::before {
+      content: "";
+      display: block;
+    }
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  dd + dd {
+    &::before {
+      content: ", ";
+      margin-inline-start: -0.25ch;
+    }
+  }
+}

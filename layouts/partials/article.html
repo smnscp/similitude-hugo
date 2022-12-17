@@ -4,37 +4,21 @@
   itemscope
   itemtype="http://schema.org/BlogPosting"
 >
-  <div class="meta">
-    {{ if not .Page.Date.IsZero }}
-      <span class="key">published on</span>
-      <span class="val"
-        ><time
-          itemprop="datePublished"
-          datetime="{{ .Date.Format "2006-01-02" }}"
-          >{{ .Date.Format "January 02, 2006" }}</time
-        ></span
-      >
-    {{ end }}
+  <dl class="e-meta">
+    {{ partial "date-published.html" .Page.Date }}
     {{ with .Params.categories }}
-      <span class="key">{{ if $page.Date.IsZero }}published{{ end }}in</span>
-      <span class="val">
-        {{ range . }}
-          <a href="{{ . | urlize | printf "categories/%s" | relURL }}"
-            >{{ . }}</a
-          >
-        {{ end }}
-      </span>
+      <dt>sorted in</dt>
+      {{ range . }}
+        <dd><a href="/categories/{{ . | urlize }}">{{ . }}</a></dd>
+      {{ end }}
     {{ end }}
     {{ with .Params.tags }}
-      <br />
-      <span class="key">tags:</span>
-      <span class="val">
-        {{ range . }}
-          <a href="{{ . | urlize | printf "tags/%s" | relURL }}">{{ . }}</a>
-        {{ end }}
-      </span>
+      <dt>tags</dt>
+      {{ range . }}
+        <dd><a href="/tags/{{ . | urlize }}">{{ . }}</a></dd>
+      {{ end }}
     {{ end }}
-  </div>
+  </dl>
   <h1 class="headline" itemprop="headline">{{ .Title }}</h1>
   <section class="body" itemprop="articleBody">
     {{ .Content }}

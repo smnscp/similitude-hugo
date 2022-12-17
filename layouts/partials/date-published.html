@@ -1,0 +1,8 @@
+{{ if not .IsZero }}
+  <dt>published on</dt>
+  <dd>
+    <time itemprop="datePublished" datetime="{{ .Format "2006-01-02" }}">
+      {{ .Format "January 02, 2006" }}
+    </time>
+  </dd>
+{{ end }}

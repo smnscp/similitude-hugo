@@ -7,15 +7,8 @@
 
     @include article-box;    
 
-    .meta {
-      .key {
-        color: var(--color-neutral);
-      }
-
-      .val,
-      .val a {
-        color: var(--color-links-negative);
-      }
+    .e-meta {
+      margin-block-start: 0;
     }
   }
 }

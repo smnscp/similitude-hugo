@@ -2,18 +2,8 @@
 
 /// Single Post Layout
 article.e-single-article {
-  .meta {
-    font-size: var(--scale-smaller);
-    text-align: right;
-
-    .key {
-      color: var(--color-neutral);
-    }
-
-    .val,
-    .val a {
-      color: var(--color-links-negative);
-    }
+  .e-meta {
+    text-align: end;
   }
 
   section.body {
