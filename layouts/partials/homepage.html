@@ -21,7 +21,7 @@
     <h2 class="headline">Categories</h2>
 
     <ul class="taxonomy-cloud categories">
-      {{ range $name, $value := . }}
+      {{ range $name, $_ := . }}
       <li>
         <a href="/categories/{{ $name | urlize }}">{{ humanize $name | title }}</a>
         <small>({{ .Count }})</small>
@@ -38,7 +38,7 @@
     <h2 class="headline">Tags</h2>
 
     <ul class="taxonomy-cloud tags">
-      {{ range $name, $value := . }}
+      {{ range $name, $_ := . }}
       <li>
         <a href="/tags/{{ $name | urlize }}">{{ $name }}</a>
         <small>({{ .Count }})</small>
