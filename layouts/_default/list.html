@@ -1,14 +1,9 @@
-{{/*  {{ define "scope-class" }}s-list{{ end }}  */}}
+{{/* define "scope-class" }}s-list{{ end */}}
 {{ define "main" }}
-  {{ $paginator := .Paginator (or .Site.Params.paginate 3) }}
-  <main class="s-article-list">
+  <main>
     <section>
       <h1 class="list-title">{{ .Title }}</h1>
-      {{ range $paginator.Pages }}
-        {{ partial "article-list-item.html" . }}
-      {{ end }}
+      {{ partial "article-list.html" (.Paginator (or .Site.Params.paginate 3)) }}
     </section>
   </main>
-  {{ partial "paginator.html" $paginator }}
-
 {{ end }}

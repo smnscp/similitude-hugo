@@ -6,16 +6,10 @@
 
     <section id="sec:recent-posts">
       <h2 class="headline">Recent Posts</h2>
-      {{ $paginator := .Paginate
+      {{ partial "article-list.html" (.Paginate
         (where .Site.RegularPages "Section" "in" .Site.Params.mainSections)
-        (or .Site.Params.paginate 3)
+        (or .Site.Params.paginate 3))
       }}
-      <div class="s-article-list">
-        {{ range $paginator.Pages }}
-          {{ partial "article-list-item.html" . }}
-        {{ end }}
-      </div>
-      {{ partial "paginator.html" $paginator }}
     </section>
 
     {{ with .Site.Taxonomies.categories }}
