@@ -5,7 +5,7 @@
 
 
     <section id="sec:recent-posts">
-      <h2 class="headline">Recent Posts</h2>
+      <h2>Recent Posts</h2>
       {{ partial "article-list.html" (.Paginate
         (where .Site.RegularPages "Section" "in" .Site.Params.mainSections)
         (or .Site.Params.paginate 3))
@@ -15,7 +15,7 @@
     {{ with .Site.Taxonomies.categories }}
 
       <section id="sec:categories">
-        <h2 class="headline">Categories</h2>
+        <h2>Categories</h2>
 
         <ul class="taxonomy-cloud categories">
           {{ range $name, $_ := . }}
@@ -33,7 +33,7 @@
     {{ with .Site.Taxonomies.tags }}
 
       <section id="sec:tags">
-        <h2 class="headline">Tags</h2>
+        <h2>Tags</h2>
 
         <ul class="taxonomy-cloud tags">
           {{ range $name, $_ := . }}

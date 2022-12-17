@@ -2,7 +2,7 @@
 {{ define "main" }}
   <main>
     <section>
-      <h1 class="list-title">{{ .Title }}</h1>
+      <h1>{{ .Title }}</h1>
       {{ partial "article-list.html" (.Paginator (or .Site.Params.paginate 3)) }}
     </section>
   </main>
