@@ -1,0 +1,8 @@
+{{/* <nav class="e-menu +levelable +foldable +sticky +end"> */}}
+<nav>
+  <menu>
+    {{ range $i, $page := . }}
+      <li><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></li>
+    {{ end }}
+  </menu>
+</nav>

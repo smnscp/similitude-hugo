@@ -41,17 +41,10 @@
   </head>
   <body class="l-page-center {{ block "scope-class" . }}{{ end }}">
     <header>
-      <section class="site-header">
-        <p><a href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a></p>
+      <section>
+        <p><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
         {{ with where .Site.RegularPages "Section" "pages" }}
-          <nav>
-            {{ range $i, $page := . }}
-              {{ if not (eq $i 0) }}|{{ end }}
-              <a class="path" href="{{ $page.RelPermalink }}"
-                >{{ $page.Title }}</a
-              >
-            {{ end }}
-          </nav>
+          {{ partial "nav.html" . }}
         {{ end }}
       </section>
     </header>
