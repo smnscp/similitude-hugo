@@ -39,7 +39,7 @@
     <link rel="pingback" href="https://webmention.io/sim.ilitu.de/xmlrpc" />
     <title>{{ with .Title }}{{ . }} -{{ end }}{{ .Site.Title }}</title>
   </head>
-  <body class="l-page-center">
+  <body class="l-page-center {{ block "scope-class" . }}{{ end }}">
     <header>
       <section class="site-header">
         <p><a href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a></p>
