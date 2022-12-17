@@ -1,56 +1,55 @@
 {{ define "main" }}
+  <main class="s-homepage">
+    {{ partial "hero.html" . }}
 
-<main class="s-homepage">
 
-  {{ partial "hero.html" . }}
+    <section id="sec:recent-posts">
+      <h2 class="headline">Recent Posts</h2>
+      {{ $paginator := .Paginate
+        (where .Site.RegularPages "Section" "in" .Site.Params.mainSections)
+        (or .Site.Params.paginate 3)
+      }}
+      <div class="s-article-list">
+        {{ range $paginator.Pages }}
+          {{ partial "article-list-item.html" . }}
+        {{ end }}
+      </div>
+      {{ partial "paginator.html" $paginator }}
+    </section>
 
-  <section id="sec:recent-posts">
-    <h2 class="headline">Recent Posts</h2>
-    {{ $paginator := .Paginate
-    (where .Site.RegularPages "Section" "in" .Site.Params.mainSections)
-    (or .Site.Params.paginate 3) }}
-    <div class="s-article-list">
-      {{ range $paginator.Pages }}
-      {{ partial "article-list-item.html" . }}
-      {{ end }}
-    </div>
-    {{ partial "paginator.html" $paginator }}
-  </section>
+    {{ with .Site.Taxonomies.categories }}
 
-  {{ with .Site.Taxonomies.categories }}
+      <section id="sec:categories">
+        <h2 class="headline">Categories</h2>
 
-  <section id="sec:categories">
-    <h2 class="headline">Categories</h2>
+        <ul class="taxonomy-cloud categories">
+          {{ range $name, $_ := . }}
+            <li>
+              <a href="/categories/{{ $name | urlize }}"
+                >{{ humanize $name | title }}</a
+              >
+              <small>({{ .Count }})</small>
+            </li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
 
-    <ul class="taxonomy-cloud categories">
-      {{ range $name, $_ := . }}
-      <li>
-        <a href="/categories/{{ $name | urlize }}">{{ humanize $name | title }}</a>
-        <small>({{ .Count }})</small>
-      </li>
-      {{ end }}
-    </ul>
-  </section>
+    {{ with .Site.Taxonomies.tags }}
 
-  {{ end }}
+      <section id="sec:tags">
+        <h2 class="headline">Tags</h2>
 
-  {{ with .Site.Taxonomies.tags }}
+        <ul class="taxonomy-cloud tags">
+          {{ range $name, $_ := . }}
+            <li>
+              <a href="/tags/{{ $name | urlize }}">{{ $name }}</a>
+              <small>({{ .Count }})</small>
+            </li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
 
-  <section id="sec:tags">
-    <h2 class="headline">Tags</h2>
-
-    <ul class="taxonomy-cloud tags">
-      {{ range $name, $_ := . }}
-      <li>
-        <a href="/tags/{{ $name | urlize }}">{{ $name }}</a>
-        <small>({{ .Count }})</small>
-      </li>
-      {{ end }}
-    </ul>
-  </section>
-
-  {{ end }}
-
-</main>
-
+  </main>
 {{ end }}

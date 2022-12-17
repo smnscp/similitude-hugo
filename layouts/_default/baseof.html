@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="{{ if eq .Description "" }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
-{{- with $.Param "keywords" }}
-<meta name="keywords" content="{{ delimit . "," }}">
-{{- end }}
-{{- with $.Param "author" }}
-<meta name="author" content="{{ . }}">
-{{- end }}
-{{ hugo.Generator }}
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css">
-<link rel="alternate" href="{{ "index.xml" | relURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
-<link rel="openid.server" href="https://id.sim.ilitu.de/">
-<link rel="openid2.provider" href="https://id.sim.ilitu.de/">
-<link rel="me" href="https://github.com/smnscp">
-<link rel="webmention" href="https://webmention.io/sim.ilitu.de/webmention">
-<link rel="pingback" href="https://webmention.io/sim.ilitu.de/xmlrpc">
-<title>{{ with .Title }}{{.}} - {{ end }}{{ .Site.Title }}</title>
-</head>
-<body class="l-page-center">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="{{ if eq .Description "" }}
+        {{ .Site.Params.description }}
+      {{ else }}
+        {{ .Description }}
+      {{ end }}"
+    />
+    {{- with $.Param "keywords" }}
+      <meta name="keywords" content="{{ delimit . "," }}" />
+    {{- end }}
+    {{- with $.Param "author" }}
+      <meta name="author" content="{{ . }}" />
+    {{- end }}
+    {{ hugo.Generator }}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ "css/style.css" | relURL }}"
+      type="text/css"
+    />
+    <link
+      rel="alternate"
+      href="{{ "index.xml" | relURL }}"
+      type="application/rss+xml"
+      title="{{ .Site.Title }}"
+    />
+    <link rel="openid.server" href="https://id.sim.ilitu.de/" />
+    <link rel="openid2.provider" href="https://id.sim.ilitu.de/" />
+    <link rel="me" href="https://github.com/smnscp" />
+    <link
+      rel="webmention"
+      href="https://webmention.io/sim.ilitu.de/webmention"
+    />
+    <link rel="pingback" href="https://webmention.io/sim.ilitu.de/xmlrpc" />
+    <title>{{ with .Title }}{{ . }} -{{ end }}{{ .Site.Title }}</title>
+  </head>
+  <body class="l-page-center">
+    <header>
+      <section class="site-header">
+        <p><a href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a></p>
+        {{ with where .Site.RegularPages "Section" "pages" }}
+          <nav>
+            {{ range $i, $page := . }}
+              {{ if not (eq $i 0) }}|{{ end }}
+              <a class="path" href="{{ $page.RelPermalink }}"
+                >{{ $page.Title }}</a
+              >
+            {{ end }}
+          </nav>
+        {{ end }}
+      </section>
+    </header>
 
-<header>
-  <section class="site-header">
-    <p><a href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a></p>
-    {{ with where .Site.RegularPages "Section" "pages" }}
-    <nav>
-      {{ range $i, $page := . }}
-        {{ if not (eq $i 0) }}|{{ end }}
-        <a class="path" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
-      {{ end }}
-    </nav>
+    {{ block "main" . }}
     {{ end }}
-  </section>
-</header>
 
-{{ block "main" . }}
-{{ end }}
 
-<footer>
-  <sectiom>
-    <span class="copyright">&copy; {{ .Site.LastChange.Year }} {{ .Site.Title }} - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
-  </sectiom>
-</footer>
-
-</body>
+    <footer>
+      <sectiom>
+        <span class="copyright"
+          >&copy; {{ .Site.LastChange.Year }} {{ .Site.Title }} -
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
+            >CC BY 4.0</a
+          ></span
+        >
+      </sectiom>
+    </footer>
+  </body>
 </html>
