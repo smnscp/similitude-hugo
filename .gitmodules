@@ -1,6 +1,3 @@
-[submodule "themes/base16"]
-	path = themes/base16
-	url = https://github.com/htdvisser/hugo-base16-theme.git
 [submodule "lib/stylament"]
 	path = lib/stylament
 	url = https://github.com/smnscp/stylament.git
