@@ -1,5 +1,9 @@
 @use "stylament/css/axioms/tools/mixins/coloring";
 
+html {
+  font-size: clamp(100%, 2vi + .25rem, 150%);
+}
+
 /// General Page Layout
 body {
   padding-block: clamp(
