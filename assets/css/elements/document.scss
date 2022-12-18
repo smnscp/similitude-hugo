@@ -1,9 +1,5 @@
 @use "stylament/css/axioms/tools/mixins/coloring";
 
-html {
-  font-size: clamp(100%, 2vi + .25rem, 150%);
-}
-
 /// General Page Layout
 body {
   --layout-gutter: 7.5vi;
@@ -13,6 +9,7 @@ body {
     (100vi - 2 * var(--layout-gutter) - var(--container-page)) / 2,
     var(--spacing-block)
   );
+
   // Invert colors. `@mixin article-box` will revert them again.
   @include coloring.invert;
 

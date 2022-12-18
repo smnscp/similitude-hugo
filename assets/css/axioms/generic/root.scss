@@ -1,0 +1,4 @@
+/// Adaptive root font size.
+:root {
+  font-size: clamp(100%, 2vi + .25rem, 150%);
+}
