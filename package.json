@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "clean": "rm -rf public",
-    "mkcss": "sass --no-source-map --load-path=lib assets/css/index.scss static/css/style.css",
+    "mkcss": "sass --no-source-map --load-path=node_modules assets/css/index.scss static/css/style.css",
     "start": "NODE_ENV=development npm run clean && npm run watchcss & npm run devserver",
     "build": "NODE_ENV=production npm run clean && npm run mkcss && hugo --gc --minify",
     "watchcss": "npm run mkcss -- --watch",
@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@fontsource/source-code-pro": "latest",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "stylament": "^0.10.1"
   },
   "devDependencies": {
     "prettier": "^2.8.1",
