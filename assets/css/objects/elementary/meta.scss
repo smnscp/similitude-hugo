@@ -17,14 +17,13 @@ dl.e-meta {
     }
 
     &::after {
-      content: ":";
+      content: ": ";
     }
   }
 
   dd + dd {
     &::before {
       content: ", ";
-      margin-inline-start: -0.25ch;
     }
   }
 }

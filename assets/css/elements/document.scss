@@ -46,10 +46,14 @@ body {
       }
     }
     menu {
+      display: flex;
+      flex-wrap: wrap;
       li {
-        display: inline;
+        block-size: auto;
+        line-height: inherit;
         + li::before {
-          content: "| ";
+          content: "·";
+          padding-inline: 0.5ch;
         }
         a {
           display: inline;
