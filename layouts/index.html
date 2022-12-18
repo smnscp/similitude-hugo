@@ -1,9 +1,15 @@
 {{ define "scope-class" }}s-homepage{{ end }}
+
+{{ define "header" }}
+  <h1 class="site-title">
+    <span class="clr-prism">
+      [<b>sim</b><b>i</b><b>l</b><b>i</b><b>t</b><b>u</b><b>de</b>]
+    </span>
+  </h1>
+{{ end }}
+
 {{ define "main" }}
   <main>
-    {{ partial "hero.html" . }}
-
-
     <section id="sec:recent-posts">
       <h2>Recent Posts</h2>
       {{ partial "article-list.html" (.Paginate
@@ -15,7 +21,6 @@
     {{ range $taxonomy, $terms := .Site.Taxonomies }}
       <section id="sec:{{ $taxonomy }}">
         <h2>{{ $taxonomy | title }}</h2>
-
         <ul class="e-taxonomy-cloud +{{ $taxonomy }}">
           {{ range $term, $_ := $terms }}
             <li data-count="{{ .Count }}" style="--count: {{ .Count }}">

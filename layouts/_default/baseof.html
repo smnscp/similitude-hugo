@@ -42,7 +42,9 @@
   <body class="l-page-center {{ block "scope-class" . }}{{ end }}">
     <header>
       <section>
-        <p><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+        {{ block "header" . }}
+          <p><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+        {{ end }}
         {{ with where .Site.RegularPages "Section" "pages" }}
           {{ partial "nav.html" . }}
         {{ end }}
