@@ -1,0 +1,27 @@
+/// Taxonomy Clouds
+ul.e-taxonomy-cloud {
+  padding-inline: 0;
+  list-style: none;
+
+  li::after {
+    content: "(" attr(data-count) ")";
+    font-size: var(--scale-smaller);
+  }
+
+  &.\+categories {
+    a {
+      text-transform: capitalize;
+      font-weight: var(--weight-bold);
+    }
+  }
+
+  &.\+tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-block);
+
+    li {
+      font-size: calc(var(--scale-smaller) + 3% * var(--count));
+    }
+  }
+}

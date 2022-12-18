@@ -12,34 +12,14 @@
       }}
     </section>
 
-    {{ with .Site.Taxonomies.categories }}
+    {{ range $taxonomy, $terms := .Site.Taxonomies }}
+      <section id="sec:{{ $taxonomy }}">
+        <h2>{{ $taxonomy | title }}</h2>
 
-      <section id="sec:categories">
-        <h2>Categories</h2>
-
-        <ul class="taxonomy-cloud categories">
-          {{ range $name, $_ := . }}
-            <li>
-              <a href="/categories/{{ $name | urlize }}"
-                >{{ humanize $name | title }}</a
-              >
-              <small>({{ .Count }})</small>
-            </li>
-          {{ end }}
-        </ul>
-      </section>
-    {{ end }}
-
-    {{ with .Site.Taxonomies.tags }}
-
-      <section id="sec:tags">
-        <h2>Tags</h2>
-
-        <ul class="taxonomy-cloud tags">
-          {{ range $name, $_ := . }}
-            <li>
-              <a href="/tags/{{ $name | urlize }}">{{ $name }}</a>
-              <small>({{ .Count }})</small>
+        <ul class="e-taxonomy-cloud +{{ $taxonomy }}">
+          {{ range $term, $_ := $terms }}
+            <li data-count="{{ .Count }}" style="--count: {{ .Count }}">
+              <a href="/{{ $taxonomy }}/{{ $term | urlize }}">{{ $term }}</a>
             </li>
           {{ end }}
         </ul>
