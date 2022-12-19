@@ -23,3 +23,19 @@
     color: var(--color-base0e);
   }
 }
+
+.clr-prism-2 {
+  background-image: linear-gradient(
+    to right,
+    var(--color-base08) 20%,
+    var(--color-base09),
+    var(--color-base0a),
+    var(--color-base0b),
+    var(--color-base0c),
+    var(--color-base0d),
+    var(--color-base0e) 85%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

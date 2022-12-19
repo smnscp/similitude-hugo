@@ -8,7 +8,7 @@
     background-size: contain;
     background-position: 2.4em;
     line-height: 3em;
-    text-shadow: 0 0 0.1em var(--color-shadow);
+    filter: drop-shadow(0 0.025em 0.025em var(--color-shadow));
     white-space: nowrap;
   }
 }
