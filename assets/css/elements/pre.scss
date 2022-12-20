@@ -1,10 +1,11 @@
+@use "stylament/css/axioms/tools/mixins/coloring";
+
 pre {
+  @include coloring.use-colors;
   max-inline-size: none;
   overflow-x: scroll;
   padding: var(--spacing-block);
   border-radius: var(--radius-xs);
-  color: var(--color-body-negative);
-  background-color: var(--color-body);
 
   code {
     background-color: transparent;

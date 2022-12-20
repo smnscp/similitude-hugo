@@ -1,10 +1,10 @@
 @use "stylament/css/axioms/tools/mixins/coloring";
 
 @mixin box {
-  @include coloring.revert;
+  @include coloring.use-colors;
   padding-block: var(--spacing-sectioning);
   padding-inline: var(--container-gutter);
   margin-inline: calc(-1 * var(--container-gutter));
   border-radius: clamp(0rem, (100vi - 100%) / 4, var(--radius-xs));
-  box-shadow: 0 0.125rem 0.0625rem var(--color-shadow);
+  box-shadow: 0 0.0625rem 0.0625rem var(--color-shadow), 0 0.125rem 0.5rem #0003;
 }

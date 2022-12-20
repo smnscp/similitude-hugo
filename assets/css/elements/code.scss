@@ -1,4 +1,6 @@
+@use "stylament/css/axioms/tools/mixins/coloring";
+
 code {
-  color: var(--color-body-negative);
-  background-color: var(--color-neutral);
+  @include coloring.set-colors("code", "accent");
+  @include coloring.use-colors;
 }

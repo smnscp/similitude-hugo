@@ -10,9 +10,6 @@ body {
     var(--spacing-block)
   );
 
-  // Invert colors. `@mixin article-box` will revert them again.
-  @include coloring.invert;
-
   > main {
     > hgroup:only-child {
       text-align: center;
