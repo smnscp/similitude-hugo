@@ -1,9 +1,10 @@
 {{ define "scope-class" }}s-homepage{{ end }}
 
 {{ define "header" }}
-  <h1 class="site-title">
-    [<span class="clr-prism-2">{{ .Site.Title }}</span>]
-  </h1>
+  <hgroup class="site-title">
+    <p class="logo"><img src="/img/logo.svg" alt="logo" /></p>
+    <h1><span class="clr-prism-2">{{ .Site.Title }}</span></h1>
+  </hgroup>
 {{ end }}
 
 {{ define "main" }}
