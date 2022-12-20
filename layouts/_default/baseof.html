@@ -43,7 +43,7 @@
     <header>
       <section>
         {{ block "header" . }}
-          <p><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+          <p><a href="{{ .Site.BaseURL }}" class="clr-prism-2">{{ .Site.Title }}</a></p>
         {{ end }}
         {{ with where .Site.RegularPages "Section" "pages" }}
           {{ partial "nav.html" . }}
