@@ -13,7 +13,9 @@
     }
 
     p.logo {
+      z-index: 0;
       inline-size: 0;
+      filter: brightness(1.8);
       img {
         block-size: 100%;
         margin-inline-start: 2.381em;
@@ -21,6 +23,7 @@
     }
 
     h1 {
+      z-index: 1;
       font-family: var(--font-mono);
       text-shadow: 0 0.03125em 0.015625em #0002;
       &::before {
