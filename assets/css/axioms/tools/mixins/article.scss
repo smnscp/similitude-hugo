@@ -1,6 +1,7 @@
 @use "stylament/css/axioms/tools/mixins/coloring";
 
 @mixin box {
+  @include coloring.set-colors("body");
   @include coloring.use-colors;
   padding-block: var(--spacing-sectioning);
   padding-inline: var(--container-gutter);

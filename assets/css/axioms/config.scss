@@ -66,6 +66,8 @@ $config: (
       shadow: #00000080,
     ),
     logical: (
+      env: "base06",
+      env-negative: "base01",
       body: "base07",
       body-negative: "base00",
       neutral: "base03",
