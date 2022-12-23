@@ -1,19 +1,20 @@
+@use "stylament/css/axioms/tools/mixins/coloring";
+
 figure {
+  @include coloring.inverse-base;
+  @include coloring.alternate;
+
   margin-inline: calc(-1 * var(--container-gutter));
   margin-block-start: var(--spacing-block);
   padding: var(--spacing-block);
-  color: var(--color-accent-negative);
-  background-color: var(--color-accent);
   
   img {
     inline-size: 100%;
     border-radius: var(--radius-xs);
   }
   
-  figcaption h4 {
+  figcaption {
     text-align: center;
     font-style: italic;
-    font-weight: normal;
-    color: var(--color-body-negative);
   }
 }

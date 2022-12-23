@@ -12,7 +12,7 @@
   "dependencies": {
     "@fontsource/source-code-pro": "latest",
     "sass": "^1.55.0",
-    "stylament": "^0.10.1"
+    "stylament": "^0.11.0"
   },
   "devDependencies": {
     "prettier": "^2.8.1",

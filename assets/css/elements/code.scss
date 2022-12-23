@@ -1,6 +1,6 @@
 @use "stylament/css/axioms/tools/mixins/coloring";
 
 code {
-  @include coloring.set-colors("code", "accent");
+  @include coloring.set-colors("code", "alternate");
   @include coloring.use-colors;
 }

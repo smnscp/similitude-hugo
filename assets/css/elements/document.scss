@@ -30,7 +30,7 @@ body {
 
   > header,
   > footer {
-    @include coloring.accent;
+    @include coloring.alternate;
     font-family: var(--font-mono);
     --spacing-sectioning: var(--spacing-block);
   }
