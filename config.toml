@@ -2,6 +2,8 @@ baseURL = "https://sim.ilitu.de/"
 languageCode = "en-us"
 title = "similitude"
 # theme = "base16"
+[markup.goldmark.renderer]
+  unsafe = true
 [markup.highlight]
 	noClasses = false
 [params]
