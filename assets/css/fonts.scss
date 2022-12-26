@@ -8,3 +8,67 @@ $styles: normal italic;
     @include Mono.fontFace($fontDir: $fontDir, $weight: $weight, $style: $style);
   }
 }
+
+@font-face {
+  font-family: "Autor";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("https://media.sim.ilitu.de/fonts/Autor/Autor/Autor-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Autor";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("https://media.sim.ilitu.de/fonts/Autor/Autor%20It/Autor-RegularIt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Autor";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("https://media.sim.ilitu.de/fonts/Autor/Autor%20Bold/Autor-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Autor";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url("https://media.sim.ilitu.de/fonts/Autor/Autor%20Bold%20It/Autor-BoldIt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Garibaldi";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("https://media.sim.ilitu.de/fonts/Garibaldi/Regular/Garibaldi-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Garibaldi";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("https://media.sim.ilitu.de/fonts/Garibaldi/Italic/Garibaldi-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Garibaldi";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("https://media.sim.ilitu.de/fonts/Garibaldi/Bold/Garibaldi-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Garibaldi";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url("https://media.sim.ilitu.de/fonts/Garibaldi/Bold%20Italic/Garibaldi-Bolditalic.woff") format("woff");
+}
