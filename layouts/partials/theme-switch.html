@@ -1,0 +1,12 @@
+<fieldset class="e-theme-switch">
+  <label for="theme-switch">☾</label>
+  <input type="range" name="theme-switch" min="-1" max="1" value="0" step="1" oninput="
+    const cl = document.documentElement.classList;
+    switch (this.value) {
+      case '-1': cl.add('clr-dark'); cl.remove('clr-light'); break;
+      case '0': cl.remove('clr-dark'); cl.remove('clr-light'); break;
+      case '1': cl.remove('clr-dark'); cl.add('clr-light'); break;
+    }
+    " />
+  <label for="theme-switch">☼</label>
+</fieldset>

@@ -45,6 +45,7 @@
         {{ block "header" . }}
           <p><a href="{{ .Site.BaseURL }}" class="clr-prism-2">{{ .Site.Title }}</a></p>
         {{ end }}
+        {{ partial "theme-switch.html" . }}
         {{ with where .Site.RegularPages "Section" "pages" }}
           {{ partial "nav.html" . }}
         {{ end }}
