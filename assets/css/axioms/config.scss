@@ -44,6 +44,10 @@ $config: (
       base: 1em,
       factor: math.pow(2, 0.25),
     ),
+    line: (
+      min: 1,
+      sub: 2,
+    ),
   ),
   ui: (
     stroke: (
