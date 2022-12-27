@@ -14,11 +14,13 @@
 
     p.logo {
       z-index: 0;
-      inline-size: 0;
-      filter: brightness(1.8);
+      inline-size: 2em;
+      margin-inline: 2.381em -4.381em;
+      background-color: var(---clr-fg);
+      mask: url("/img/logo.svg") no-repeat 0 / contain;
+
       img {
-        block-size: 100%;
-        margin-inline-start: 2.381em;
+        display: none;
       }
     }
 
