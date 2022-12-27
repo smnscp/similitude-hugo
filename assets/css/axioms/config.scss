@@ -21,9 +21,18 @@ $config: (
   typography: (
     font-family: (
       literal: (
-        serif: ("Garibaldi", "Quieta", "Source Serif Pro"),
-        sans: ("Autor", "Source Sans Pro"),
-        mono: ("Source Code Pro"),
+        serif: (
+          "Garibaldi",
+          "Quieta",
+          "Source Serif Pro",
+        ),
+        sans: (
+          "Autor",
+          "Source Sans Pro",
+        ),
+        mono: (
+          "Source Code Pro",
+        ),
       ),
       logical: (
         body: "serif",
