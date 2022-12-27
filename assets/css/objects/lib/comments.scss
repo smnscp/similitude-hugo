@@ -8,16 +8,16 @@ section.sz-list {
 
     &::marker {
       content: counters(sz-item, ".") ". ";
-      color: var(--color-base04);
+      color: var(--color-neutral);
       font-size: smaller;
       font-weight: bold;
     }
   }
-  
-  sz-root,
-  sz-item {
-    --text-color: var(--color-base01);
-    --bg-color: var(--color-base06);
-    --figure-color: var(--color-base07);
-  }
+}
+
+sz-root,
+sz-item {
+  --text-color: var(--color-alternate);
+  --bg-color: var(--color-body-contra);
+  --figure-color: var(--color-alternate-contra);
 }
