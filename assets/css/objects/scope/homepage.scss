@@ -4,7 +4,7 @@
     display: flex;
     font-size: var(--scale-4);
     line-height: 3em;
-    filter: drop-shadow(0 0.025em 0.025em var(--color-shadow));
+    filter: drop-shadow(var(--shadow-xs));
 
     * {
       font-size: inherit;
@@ -27,7 +27,7 @@
     h1 {
       z-index: 1;
       font-family: var(--font-mono);
-      text-shadow: 0 0.03125em 0.015625em #0002;
+      text-shadow: var(--shadow-xxs);
       &::before {
         content: "[";
       }
