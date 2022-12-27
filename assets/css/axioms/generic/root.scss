@@ -1,4 +1,20 @@
+@use "../tools/mixins/theme";
+
 /// Adaptive root font size.
 :root {
   font-size: clamp(100%, 2vi + .25rem, 150%);
+}
+
+/// Implicit light theme.
+@media (prefers-color-scheme: light) {
+  :root:not(.clr-light):not(.clr-dark) {
+    @include theme.light;
+  }
+}
+
+/// Implicit dark theme.
+@media (prefers-color-scheme: dark) {
+  :root:not(.clr-light):not(.clr-dark) {
+    @include theme.dark;
+  }
 }

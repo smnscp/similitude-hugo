@@ -1,0 +1,11 @@
+@use "../../axioms/tools/mixins/theme";
+
+/// Explicit light theme.
+.clr-light {
+  @include theme.light;
+}
+
+/// Explicit dark theme.
+.clr-dark {
+  @include theme.dark;
+}
