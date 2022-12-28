@@ -19,4 +19,7 @@
   --color-base0d: #8ab3b5;
   --color-base0e: #a89bb9;
   --color-base0f: #bb9584;
+  --color-body: var(--color-theme05);
+  --color-neutral: var(--color-theme04);
+  --color-alternate: var(--color-theme06);
 }
