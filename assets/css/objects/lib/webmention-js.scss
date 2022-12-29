@@ -1,0 +1,38 @@
+@use "stylament/css/axioms/tools/mixins/coloring";
+
+#sec\:webmentions {
+  ul.comments,
+  ul.reacts {
+    list-style: none;
+    max-block-size: 20rem;
+    overflow: auto;
+
+    li {
+      @include coloring.set-colors("alternate");
+      @include coloring.use-colors;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      .text {
+        font-style: italic;
+        text-decoration: none;
+      }
+
+      .name {
+        color: var(--color-neutral);
+      }
+
+      a.reaction {
+        position: relative;
+        text-decoration: none;
+
+        img {
+          max-block-size: var(--length-l2);
+          max-inline-size: var(--length-l2);
+        }
+      }
+    }
+  }
+}

@@ -8,5 +8,6 @@
 @use "./elementary/theme-switch.scss";
 @use "./elementary/highlight.scss";
 @use "./layout/page-center.scss";
-@use "./lib/comments.scss";
+@use "./lib/webmention-js.scss";
+@use "./lib/senfdazu.scss";
 @use "./scope/homepage.scss";
