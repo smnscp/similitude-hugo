@@ -1,0 +1,12 @@
+{{ $dir := .dir }}
+{{ $selected := .selected }}
+{{ range os.ReadDir $dir }}
+  {{ if .IsDir }}
+    {{ partial "theme-links.html" (dict "dir" (path.Join $dir .Name) "selected" $selected) }}
+  {{ else }}
+    {{ $rel := cond (eq .Name $selected) "stylesheet" "alternate stylesheet" }}
+    {{ $url := path.Join $dir .Name | strings.TrimPrefix "static" }}
+    {{ $name := $url | strings.TrimPrefix "/css/themes/" | strings.TrimSuffix ".css" | humanize | title }}
+    <link rel="{{ $rel }}" href="{{ $url }}" title="{{ $name }}" />
+  {{ end }}
+{{ end }}
