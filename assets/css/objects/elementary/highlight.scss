@@ -1,9 +1,6 @@
-@use "../../elements/figure.scss";
-
-/* Pygments template by Jan T. Sott (https://github.com/idleberg) */
-.highlight {
-  @extend figure;
-
+/// Code Highlighting
+/// @link https://github.com/alecthomas/chroma#the-html-formatter Powered by Chroma `WithClasses()`
+.e-highlight {
   .hll {
     background-color: var(--color-theme02);
   }
