@@ -3,7 +3,7 @@
 pre {
   @include coloring.use-colors;
   max-inline-size: none;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: var(--spacing-block);
   border-radius: var(--radius-xs);
 
