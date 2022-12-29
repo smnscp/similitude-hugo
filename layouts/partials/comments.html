@@ -1,4 +1,4 @@
-<section id="section-comments">
+<section id="sec:comments">
   <h2>Comments</h2>
   <sz-root
     src="{{ .Site.Params.commentsServer }}/comments/{{ .File.ContentBaseName }}"
@@ -12,7 +12,7 @@
   import BaseElement from "{{ .Site.Params.commentsServer }}/js/simple/base_element.js";
   import md from "/js/md.js";
 
-  const hlStyle = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/eighties.min.css" />`;
+  const hlStyle = `<link rel="stylesheet" href="/css/hljs.css" />`;
 
   class MarkdownElement extends BaseElement {
     render(text) {
