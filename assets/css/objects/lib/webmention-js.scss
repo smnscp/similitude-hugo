@@ -4,16 +4,15 @@
   ul.comments,
   ul.reacts {
     list-style: none;
-    max-block-size: 20rem;
-    overflow: auto;
+    padding-inline-start: var(--length-l2);
 
     li {
-      @include coloring.set-colors("alternate");
+      @include coloring.set-colors("body");
       @include coloring.use-colors;
 
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
+      padding: var(--length-l0to1);
+      border-radius: var(--radius-xs);
+      position: relative;
 
       .text {
         font-style: italic;
@@ -25,12 +24,15 @@
       }
 
       a.reaction {
-        position: relative;
         text-decoration: none;
 
         img {
-          max-block-size: var(--length-l2);
-          max-inline-size: var(--length-l2);
+          position: absolute;
+          inset-inline-start: calc(-1 * var(--length-l2));
+          inset-block-start: 0;
+          max-block-size: var(--length-l1to2);
+          max-inline-size: var(--length-l1to2);
+          border-radius: var(--radius-xs);
         }
       }
     }
