@@ -5,11 +5,11 @@
   @extend figure;
 
   .hll {
-    background-color: var(--color-base02);
+    background-color: var(--color-theme02);
   }
   /* Comment */
   .c {
-    color: var(--color-base03);
+    color: var(--color-theme03);
   }
   /* Error */
   .err {
@@ -25,7 +25,7 @@
   }
   /* Name */
   .n {
-    color: var(--color-base07);
+    color: var(--color-theme07);
   }
   /* Operator */
   .o {
@@ -33,23 +33,23 @@
   }
   /* Punctuation */
   .p {
-    color: var(--color-base07);
+    color: var(--color-theme07);
   }
   /* Comment.Multiline */
   .cm {
-    color: var(--color-base03);
+    color: var(--color-theme03);
   }
   /* Comment.Preproc */
   .cp {
-    color: var(--color-base03);
+    color: var(--color-theme03);
   }
   /* Comment.Single */
   .c1 {
-    color: var(--color-base03);
+    color: var(--color-theme03);
   }
   /* Comment.Special */
   .cs {
-    color: var(--color-base03);
+    color: var(--color-theme03);
   }
   /* Generic.Deleted */
   .gd {
@@ -61,7 +61,7 @@
   }
   /* Generic.Heading */
   .gh {
-    color: var(--color-base07);
+    color: var(--color-theme07);
     font-weight: bold;
   }
   /* Generic.Inserted */
@@ -70,7 +70,7 @@
   }
   /* Generic.Prompt */
   .gp {
-    color: var(--color-base03);
+    color: var(--color-theme03);
     font-weight: bold;
   }
   /* Generic.Strong */
@@ -124,7 +124,7 @@
   }
   /* Name.Builtin */
   .nb {
-    color: var(--color-base07);
+    color: var(--color-theme07);
   }
   /* Name.Class */
   .nc {
@@ -140,7 +140,7 @@
   }
   /* Name.Entity */
   .ni {
-    color: var(--color-base07);
+    color: var(--color-theme07);
   }
   /* Name.Exception */
   .ne {
@@ -152,7 +152,7 @@
   }
   /* Name.Label */
   .nl {
-    color: var(--color-base07);
+    color: var(--color-theme07);
   }
   /* Name.Namespace */
   .nn {
@@ -164,7 +164,7 @@
   }
   /* Name.Property */
   .py {
-    color: var(--color-base07);
+    color: var(--color-theme07);
   }
   /* Name.Tag */
   .nt {
@@ -180,7 +180,7 @@
   }
   /* Text.Whitespace */
   .w {
-    color: var(--color-base07);
+    color: var(--color-theme07);
   }
   /* Literal.Number.Float */
   .mf {
@@ -204,11 +204,11 @@
   }
   /* Literal.String.Char */
   .sc {
-    color: var(--color-base07);
+    color: var(--color-theme07);
   }
   /* Literal.String.Doc */
   .sd {
-    color: var(--color-base03);
+    color: var(--color-theme03);
   }
   /* Literal.String.Double */
   .s2 {
@@ -244,7 +244,7 @@
   }
   /* Name.Builtin.Pseudo */
   .bp {
-    color: var(--color-base07);
+    color: var(--color-theme07);
   }
   /* Name.Variable.Class */
   .vc {
