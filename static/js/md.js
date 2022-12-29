@@ -1,4 +1,4 @@
-import hljs from "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/es/highlight.min.js";
+import hljs from "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/es/highlight.min.js";
 import { Remarkable } from "https://cdn.jsdelivr.net/npm/remarkable@2.0.1/dist/esm/index.min.js";
 
 const md = new Remarkable("full", {
