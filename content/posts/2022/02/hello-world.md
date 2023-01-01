@@ -1,6 +1,9 @@
 ---
 title: "Hello World!"
 date: 2022-02-03T22:22:23+01:00
+aliases: [
+  "/posts/hello-world/",
+]
 draft: false
 comments: true
 ---

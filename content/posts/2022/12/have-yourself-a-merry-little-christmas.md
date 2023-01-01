@@ -1,6 +1,9 @@
 ---
-title: "Have Yourself a Merry Little Christmas 2022"
+title: "Have Yourself a Merry Little Christmas"
 date: 2022-12-24T10:48:44+01:00
+aliases: [
+  "/posts/have-yourself-a-merry-little-christmas-2022/",
+]
 comments: true
 ---
 
