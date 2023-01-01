@@ -4,6 +4,7 @@ date: 2022-02-03T22:22:23+01:00
 aliases: [
   "/posts/hello-world/",
 ]
+tags: [meta, lorem ipsum]
 draft: false
 comments: true
 ---
