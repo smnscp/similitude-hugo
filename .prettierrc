@@ -8,6 +8,16 @@
         "parser": "go-template",
         "printWidth": 108
       }
+    },
+    {
+      "files": [
+        "*.md"
+      ],
+      "options": {
+        "parser": "markdown",
+        "printWidth": 96,
+        "proseWrap": "always"
+      }
     }
   ]
 }
