@@ -7,6 +7,8 @@ comments: true
 
 **Böllerdebatte:** Berlins CDU-Chef Kai Wegner will “nicht […] den Familien diese Tradition nehmen”. Hier wird deutlich, worauf sich [Konservativismus](https://de.wikipedia.org/wiki/Konservatismus) bei unseren sogenannten Christ-Demokraten bezieht: Die Aufrechterhaltung [völlig überholten und unzeitgemäßen Brauchtums](https://de.wikipedia.org/wiki/Feuerwerk#Gesellschaftliche_und_politische_Funktionen_von_Feuerwerk), nicht jedoch die Bewahrung der Schöpfung, der Gesundheit, des Gemeinwohls.
 
+<!--more-->
+
 <figure>
   <blockquote cite="https://www.ardmediathek.de/video/morgenmagazin/wegner-fuer-ausweitung-von-boellerverbotszonen/das-erste/Y3JpZDovL2Rhc2Vyc3RlLmRlL21vcmdlbm1hZ2F6aW4vYTM3MmY0ODYtMDk4Yi00OThiLTljNDEtZWEyYWE5MzBhMTdk">Ich finde, wir dürfen nicht, weil einige Hundert Chaoten und Verbrecher Polizei und Feuerwehr angreifen, den Familien diese Tradition nehmen.</blockquote>
   <figcaption><cite>Kai Wegner im ARD-Morgenmagazin, 2. Januar 2023</cite></figcaption>
