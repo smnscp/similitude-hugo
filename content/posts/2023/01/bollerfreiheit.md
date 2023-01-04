@@ -106,4 +106,4 @@ weil der Böllerwahnsinn nur ein Symptom einer schwer krankenden Gesellschaft is
 belasse es vorerst hierbei. Normalerweise befürworte ich reine Symptombehandlung nicht. Aber
 hier sehe ich nicht nur die Möglichkeit, unkompliziert dem Brandherd Brennstoff zu entziehen,
 sondern auch einen Schritt in eine bessere Zukunft zu gehen. Also: Schluss mit Sonderregelungen
-zum Jahreswechsel.
+zum Jahreswechsel!
