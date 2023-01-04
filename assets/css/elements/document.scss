@@ -3,14 +3,14 @@
 
 /// General Page Layout
 body {
-  --layout-gutter: 7.5vi;
+  --layout-gutter: 7.5vw;
 
   @include coloring.set-colors("env");
   @include coloring.use-colors;
 
   padding-block: clamp(
     0rem,
-    (100vi - 2 * var(--layout-gutter) - var(--container-page)) / 2,
+    (100vw - 2 * var(--layout-gutter) - var(--container-page)) / 2,
     var(--spacing-block)
   );
 

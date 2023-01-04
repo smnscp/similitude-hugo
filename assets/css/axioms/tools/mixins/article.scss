@@ -6,6 +6,6 @@
   padding-block: var(--spacing-sectioning);
   padding-inline: var(--container-gutter);
   margin-inline: calc(-1 * var(--container-gutter));
-  border-radius: clamp(0rem, (100vi - 100%) / 4, var(--radius-xs));
+  border-radius: clamp(0rem, (100vw - 100%) / 4, var(--radius-xs));
   box-shadow: var(--shadow-xxs), var(--shadow-sm);
 }
