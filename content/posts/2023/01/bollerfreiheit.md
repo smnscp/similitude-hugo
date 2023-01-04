@@ -1,6 +1,8 @@
 ---
 title: "“Böllerfreiheit”"
 date: 2023-01-02T19:19:58+01:00
+lastmod: 2023-01-04T18:45:15+01:00
+keywords: "Böllerdebatte, Böllerverbot, Berlin, Ausnahmeregelung"
 categories: [politics]
 comments: true
 ---
@@ -27,14 +29,7 @@ Angesichts des Ausmaßes der Sachschäden,
 und Jugendlichen, und
 [Stresswirkung bei Tieren](https://www.wp.de/region/sauer-und-siegerland/boeller-explodiert-in-kapuze-zweijaehriger-schwer-verletzt-id237266485.html)
 und Menschen empfinde ich es als Hohn, hier noch den Schutz vermeintlicher Familientradition
-vorzuschieben. Der eigentliche Grund für solche rückgratlosen Stellungnahmen etablierter
-Politiker\*innen ist doch die Angst, den sich in seiner “Freiheit” eingeschränkt wähnenden Mob
-nicht noch weiter nach rechts zu verlieren. (Aber, let’s face it: Wer Böllern ernsthaft noch als
-Ausdruck persönlicher Freiheit versteht, ist eh lost, was demokratisches Zusammenleben angeht.
-Den holen demokratische Parteien mit noch so weichgewaschenem Programm nicht mehr ab. Der
-braucht jemanden, der ihm persönlich zeigt, dass er was wert ist, auch ohne Lärm.) So scheut man
-konsequente Verbote, weil solche der Gesellschaft nicht mehr zuzumuten seien (nach all den
-Entbehrungen und “Grundrechtseinschränkungen” der letzten Jahre).
+vorzuschieben, statt konsequente Schritte nach vorn zu wagen.
 
 Jetzt ist nicht die Zeit, dass Politik vor Verboten zurückschrecken sollte. Politik kann nicht
 den Anspruch haben, es allen (jedem Individuum) recht zu machen. Politik muss den Anspruch
@@ -92,7 +87,7 @@ Qualifikation das Zünden von Sprengkörpern zu erlauben, obwohl jedes Mal Mensc
 kommen, erinnert mich an den Plot von
 [“The Purge”](https://de.wikipedia.org/wiki/The_Purge_%E2%80%93_Die_S%C3%A4uberung). Der
 Vergleich mag überzogen erscheinen, aber so weit hergeholt ist er nicht: Geht es nicht für die
-meisten Böller-Fans darum, mal so richtig Dampf abzulassen? Und die Schwächsten der Gesellschaft
+meisten Böller-Fans darum, mal so richtig Dampf abzulassen? Und die, die nich mitmachen wollen,
 sind die Leidtragenden.
 
 Es ist an der Zeit, dass wir unsere Ansicht überdenken, was wir im Hinblick auf Feuerwerkskonsum
@@ -101,3 +96,14 @@ Handwerk beherrschen! Verzichten wir darauf, den Finger unbedingt selbst am Abzu
 können wir auch, ohne dessen Verlust fürchten zu müssen, die professionelle Show genießen. Eine
 altruistische Gesellschaft könnte eine solche Entwöhnung ohne Verbote “von oben” schaffen. Und
 du, Deutschland? – Überrasch mich!
+
+---
+
+**Nachtrag 4. Januar:** Ich habe ein paar zynische Stellen gestrichen (nicht aus der Historie;
+suche dort, wer mag). Die Richtung, in die sich die öffentliche Diskussion in den letzten Tagen
+entwickelt hat, ist schon traurig genug. Ich hatte überlegt, noch ein Follow-up zu schreiben,
+weil der Böllerwahnsinn nur ein Symptom einer schwer krankenden Gesellschaft ist. Aber ich
+belasse es vorerst hierbei. Normalerweise befürworte ich reine Symptombehandlung nicht. Aber
+hier sehe ich nicht nur die Möglichkeit, unkompliziert dem Brandherd Brennstoff zu entziehen,
+sondern auch einen Schritt in eine bessere Zukunft zu gehen. Also: Schluss mit Sonderregelungen
+zum Jahreswechsel.
