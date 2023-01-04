@@ -87,7 +87,7 @@ Qualifikation das Zünden von Sprengkörpern zu erlauben, obwohl jedes Mal Mensc
 kommen, erinnert mich an den Plot von
 [“The Purge”](https://de.wikipedia.org/wiki/The_Purge_%E2%80%93_Die_S%C3%A4uberung). Der
 Vergleich mag überzogen erscheinen, aber so weit hergeholt ist er nicht: Geht es nicht für die
-meisten Böller-Fans darum, mal so richtig Dampf abzulassen? Und die, die nich mitmachen wollen,
+meisten Böller-Fans darum, mal so richtig Dampf abzulassen? Und die, die nicht mitmachen wollen,
 sind die Leidtragenden.
 
 Es ist an der Zeit, dass wir unsere Ansicht überdenken, was wir im Hinblick auf Feuerwerkskonsum
