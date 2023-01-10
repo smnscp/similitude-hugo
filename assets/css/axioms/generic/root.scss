@@ -7,14 +7,14 @@
 
 /// Implicit light theme.
 @media (prefers-color-scheme: light) {
-  :root:not(.clr-light):not(.clr-dark) {
+  :root:not(.thm-light):not(.thm-dark) {
     @include theme.light;
   }
 }
 
 /// Implicit dark theme.
 @media (prefers-color-scheme: dark) {
-  :root:not(.clr-light):not(.clr-dark) {
+  :root:not(.thm-light):not(.thm-dark) {
     @include theme.dark;
   }
 }

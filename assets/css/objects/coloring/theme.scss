@@ -1,11 +1,16 @@
 @use "../../axioms/tools/mixins/theme";
 
 /// Explicit light theme.
-.clr-light {
+.thm-light {
   @include theme.light;
 }
 
 /// Explicit dark theme.
-.clr-dark {
+.thm-dark {
   @include theme.dark;
+}
+
+/// Temporary class during transitioning phase.
+.thm-trans * {
+  transition: background-color 0.25s, color 0.25s;
 }
