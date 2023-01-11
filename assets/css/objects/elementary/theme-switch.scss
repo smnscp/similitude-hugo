@@ -7,31 +7,32 @@ fieldset.e-theme-switch {
   padding: 0;
 
   input[type="range"] {
+    --thumb-size: var(--stroke-width-8);
     -webkit-appearance: none;
-    inline-size: 2rem;
+    box-sizing: content-box;
+    block-size: var(--thumb-size);
+    inline-size: calc(2 * var(--thumb-size));
+    padding: var(--stroke-width-1);
+    background: var(---clr-bg);
+    border: var(--stroke-width-1) solid var(---clr-fg);
+    border-radius: var(--radius-full);
     box-shadow: none;
-    background: transparent;
-    border: none;
 
     @mixin range-track {
-      box-sizing: border-box;
-      block-size: 1rem;
       inline-size: 100%;
-      cursor: pointer;
-      background: var(---clr-bg);
-      border: 0.0625rem solid var(---clr-fg);
-      border-radius: 1rem;
+      background: transparent;
+      border: none;
       box-shadow: none;
     }
 
     @mixin range-thumb {
       box-sizing: border-box;
-      block-size: 1rem;
-      inline-size: 1rem;
-      border: 0.0625rem solid var(---clr-fg);
-      border-radius: 50%;
+      block-size: var(--thumb-size);
+      inline-size: var(--thumb-size);
+      border: none;
+      border-radius: var(--radius-full);
       cursor: pointer;
-      background: var(---clr-bg);
+      background: var(---clr-fg);
       box-shadow: none;
     }
 
@@ -45,13 +46,11 @@ fieldset.e-theme-switch {
 
     &::-webkit-slider-runnable-track {
       -webkit-appearance: none;
-      margin-inline: -0.0625rem;
       @include range-track;
     }    
 
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
-      margin-block: -0.0625rem;
       @include range-thumb;
     }  
   }
