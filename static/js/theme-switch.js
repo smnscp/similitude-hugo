@@ -1,22 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const themeClasses = ["thm-dark", "thm-light"];
+  const schemeClasses = ["thm-dark", "thm-light"];
   const transitioningClass = "thm-trans";
 
-  const selectTheme = (index) => {
+  const selectScheme = (index) => {
     const rootClasses = document.documentElement.classList;
-    rootClasses.remove(...themeClasses);
-    rootClasses.add(themeClasses[index], transitioningClass);
+    rootClasses.remove(...schemeClasses);
+    rootClasses.add(schemeClasses[index], transitioningClass);
     setTimeout(() => {
       rootClasses.remove(transitioningClass);
     }, 500);
   };
 
   /**
-   *
    * @param {HTMLInputElement} control
    */
-  const activateThemeSwitch = (control) => {
-    control.oninput = () => selectTheme(parseInt(control.value));
+  const activateRangeButtons = (control) => {
     control.previousElementSibling.onclick = () => {
       control.stepDown();
       control.oninput();
@@ -27,7 +25,55 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   };
 
+  const selectTheme = (index) => {
+    const rootClasses = document.documentElement.classList;
+    rootClasses.add(transitioningClass);
+    if (document.styleSheetSets) {
+      document.selectedStyleSheetSet = document.styleSheetSets[index];
+    } else {
+      const link = document.head.querySelectorAll(
+        "link[rel~=stylesheet][title]"
+      )[index];
+      if (document.themeLink) {
+        document.head.removeChild(document.themeLink);
+      }
+      document.themeLink = document.createElement("link");
+      document.themeLink.setAttribute("rel", "stylesheet");
+      document.themeLink.setAttribute("href", link.href);
+      document.head.appendChild(document.themeLink);
+    }
+    setTimeout(() => {
+      rootClasses.remove(transitioningClass);
+    }, 500);
+  };
+
+  /**
+   * @param {HTMLInputElement} control
+   */
+  const calibrateThemeSwitch = (control) => {
+    control.onmouseover = () => {
+      if (control.max < 0) {
+        control.max =
+          (
+            document.styleSheetSets ||
+            document.head.querySelectorAll("link[rel~=stylesheet][title]")
+          ).length - 1;
+      } else control.onmouseover = null;
+    };
+  };
+
+  document
+    .querySelectorAll("input[data-behavior=scheme-switch]")
+    .forEach((control) => {
+      control.oninput = () => selectScheme(parseInt(control.value));
+      activateRangeButtons(control);
+    });
+
   document
     .querySelectorAll("input[data-behavior=theme-switch]")
-    .forEach(activateThemeSwitch);
+    .forEach((control) => {
+      control.oninput = () => selectTheme(parseInt(control.value));
+      activateRangeButtons(control);
+      calibrateThemeSwitch(control);
+    });
 });

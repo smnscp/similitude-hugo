@@ -1,14 +1,28 @@
 <fieldset class="e-theme-switch">
-  <label for="theme-switch">☾</label>
+  <label for="scheme-switch">☾</label>
   <input
     type="range"
-    name="theme-switch"
+    name="scheme-switch"
     min="0"
     max="1"
     value="0"
     step="1"
-    data-behavior="theme-switch"
+    data-behavior="scheme-switch"
   />
-  <label for="theme-switch">☼</label>
+  <label for="scheme-switch">☼</label>
+</fieldset>
+<fieldset class="e-theme-switch">
+  <label for="theme-switch">❮</label>
+  <input
+    type="range"
+    name="theme-switch"
+    min="0"
+    max="-1"
+    value="0"
+    step="1"
+    data-behavior="theme-switch"
+    style="inline-size: 4rem;"
+  />
+  <label for="theme-switch">❯</label>
 </fieldset>
 <script src="/js/theme-switch.js" defer></script>
