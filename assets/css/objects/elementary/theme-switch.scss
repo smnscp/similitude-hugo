@@ -5,6 +5,7 @@ fieldset.e-theme-switch {
   border: none;
   inline-size: fit-content;
   padding: 0;
+  user-select: none;
 
   input[type="range"] {
     --thumb-size: var(--stroke-width-8);
