@@ -51,15 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
    * @param {HTMLInputElement} control
    */
   const calibrateThemeSwitch = (control) => {
-    control.onmouseover = () => {
-      if (control.max < 0) {
-        control.max =
-          (
-            document.styleSheetSets ||
-            document.head.querySelectorAll("link[rel~=stylesheet][title]")
-          ).length - 1;
-      } else control.onmouseover = null;
-    };
+    control.max =
+      document.head.querySelectorAll("link[rel~=stylesheet][title]").length - 1;
   };
 
   document
