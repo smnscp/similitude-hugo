@@ -1,0 +1,6 @@
+<figure>
+  <blockquote {{ with .Get 2 }}cite="{{ . }}" {{ end }}>
+    {{ .Inner }}
+  </blockquote>
+  <figcaption>{{ .Get 0 }}{{ with .Get 1 }}, <cite>{{ . }}</cite>{{ end }}</figcaption>
+</figure>
