@@ -5,6 +5,7 @@ lastmod: 2023-01-04T18:45:15+01:00
 keywords: "Böllerdebatte, Böllerverbot, Berlin, Ausnahmeregelung"
 categories: [politics]
 comments: true
+nopromo: true
 ---
 
 **Böllerdebatte:** Berlins CDU-Chef Kai Wegner will “nicht […] den Familien diese Tradition

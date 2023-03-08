@@ -12,8 +12,10 @@
     <section id="sec:recent-posts">
       <h2>Recent Posts</h2>
       {{ partial "article-list.html" (.Paginate
-        (where .Site.RegularPages "Section" "in" .Site.Params.mainSections)
-        (or .Site.Params.paginate 3))
+        (where
+        (where .Site.RegularPages "Type" "posts")
+        "Params.nopromo" "!=" true)
+        )
       }}
     </section>
 

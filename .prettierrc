@@ -16,7 +16,7 @@
       "options": {
         "parser": "markdown",
         "printWidth": 96,
-        "proseWrap": "always"
+        "proseWrap": "never"
       }
     }
   ]
