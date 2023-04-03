@@ -1,6 +1,6 @@
 ---
 title: "Overcoming Code Format Disputes"
-date: 2023-04-03T19:38:58+01:00
+date: 2023-04-03T19:38:58+02:00
 keywords: "tabs vs. spaces, line length, soft line wrap, align consecutive assignments, grabenkampf"
 categories: [code]
 comments: true
