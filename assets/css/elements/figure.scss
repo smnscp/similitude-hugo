@@ -7,6 +7,10 @@ figure {
   margin-inline: calc(-1 * var(--container-gutter));
   margin-block-start: var(--spacing-block);
   padding: var(--spacing-block);
+
+  &.no-outdent {
+    margin-inline: 0;
+  }
   
   img {
     inline-size: 100%;
@@ -21,5 +25,11 @@ figure {
 
   blockquote {
     margin-inline: auto;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    background-color: var(--color-links);
   }
 }
