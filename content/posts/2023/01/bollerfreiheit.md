@@ -1,7 +1,7 @@
 ---
 title: "“Böllerfreiheit”"
 date: 2023-01-02T19:19:58+01:00
-lastmod: 2023-01-04T18:45:15+01:00
+lastmod: 2023-03-10T18:04:15+01:00
 keywords: "Böllerdebatte, Böllerverbot, Berlin, Ausnahmeregelung"
 categories: [politics]
 comments: true
@@ -28,8 +28,8 @@ nicht jedoch die Bewahrung der Schöpfung, der Gesundheit, des Gemeinwohls.
 Angesichts des Ausmaßes der Sachschäden,
 [Körperverletzungen, insbesondere bei Kindern](https://www.wp.de/region/sauer-und-siegerland/boeller-explodiert-in-kapuze-zweijaehriger-schwer-verletzt-id237266485.html)
 und Jugendlichen, und
-[Stresswirkung bei Tieren](https://www.wp.de/region/sauer-und-siegerland/boeller-explodiert-in-kapuze-zweijaehriger-schwer-verletzt-id237266485.html)
-und Menschen empfinde ich es als Hohn, hier noch den Schutz vermeintlicher Familientradition
+[Stresswirkung bei Tieren](https://www.nabu-leipzig.de/stellungnahmen/silvesterappell/)
+[und Menschen](https://www.tagesschau.de/faktenfinder/silvester-boellern-auswirkungen-101.html) empfinde ich es als Hohn, hier noch den Schutz vermeintlicher Familientradition
 vorzuschieben, statt konsequente Schritte nach vorn zu wagen.
 
 Jetzt ist nicht die Zeit, dass Politik vor Verboten zurückschrecken sollte. Politik kann nicht
