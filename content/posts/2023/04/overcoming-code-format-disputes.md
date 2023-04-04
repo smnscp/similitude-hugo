@@ -1,6 +1,7 @@
 ---
 title: "Overcoming Code Format Disputes"
 date: 2023-04-03T19:38:58+02:00
+lastmod: 2023-04-04T08:16:15+01:00
 keywords: "tabs vs. spaces, line length, soft line wrap, align consecutive assignments, grabenkampf"
 categories: [code]
 comments: true
@@ -10,7 +11,7 @@ Superficially, this article is just about coding style “Grabenkämpfe”[^grab
 
 [^grabenkampf]: “Grabenkampf” literally means _trench warfare_. In German it also has a [metaphorical meaning](https://de.wikipedia.org/wiki/Grabenkrieg#Figurative_Bedeutung) of long-lasting arguments without real progress.
 
-## Dare You Questioning My Style!
+## Dare You Question My Style!
 
 A while ago, a colleague of mine challenged [my habit to hard-break long lines of prose in Markdown files](https://github.com/smnscp/similitude-hugo/blob/096261f80997dcc6bc6b7f4d69352dfc43aa24d2/.prettierrc#L19).
 
@@ -100,7 +101,7 @@ On the other hand, I understand why others like that tabular style. Putting thin
 
 Realizing that I can never convince them to abandon that habit, and they will never make me love it, I wondered what could be a possible middle ground: Giving them their reading comfort while keeping formatting conflicts out of the shared codebase.
 
-## Filling `\t` softly
+## Filling `\t` Softly
 
 And that was when the scales fell from my eyes: This problem is not much unlike the one described in the first part. Applying soft line wrap is just one form of on-the-fly formatting in order to achieve a presentation of contents that optimally fits the output medium and the reader’s preferences. Why not do the same with tabular code alignment? Instead of “hard-coding” those extra spaces, just tell your editor which patterns you want to have aligned. And it shall present you the code just the way you like it. While your team-mates don’t have to cope with format-induced merge conflicts, lines depending on each other’s spacing, reading-flow-breaking gaps, and so on.
 
@@ -108,6 +109,6 @@ And guess what! I was not the first one who came up with that idea. A VS Code pl
 
 > Aligns certain operators by visually stretching the leading characters, this way you can have groups of aligned code, without having to deal with meaningless whitespace changes in your commits.
 
-I gave it a quick try and it works pretty well. Sure, there’s room for improvement. But anyways, it’s great idea and a good implementation. I wonder if there are others for different editors. If you happen to know one, please add it in a comment!
+I gave it a quick try and it works pretty well. Sure, there’s room for improvement. But anyways, it’s a great idea and a proper implementation. I wonder if there are others for different editors. If you happen to know one, please add it in a comment!
 
 I think, this kind of responsive code presentation might be the key to solve a lot of conflicts in the bike-shedding and “Grabenkampf” areas of software development. Next time, let’s talk about **Tabs vs. Spaces** 😁
