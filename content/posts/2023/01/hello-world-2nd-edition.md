@@ -1,6 +1,7 @@
 ---
 title: "Hello World (2nd edition)"
 date: 2023-01-01T18:54:32+01:00
+categories: [meta]
 tags: [meta]
 ---
 
