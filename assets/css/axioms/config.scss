@@ -50,17 +50,6 @@ $config: (
     ),
   ),
   ui: (
-    shadow: (
-      literal: (
-        xxs: "0 0.03125em 0.0625em #0001",
-        xs: "0 0.0625rem 0.125rem #0002",
-        sm: "0 0.125rem 0.25rem #0003",
-        md: "0 0.25rem 0.5rem #0004",
-        lg: "0 0.5rem 1rem #0005",
-        xl: "0 1rem 2rem #0006",
-        xxl: "0 2rem 4rem #0007",
-      ),
-    ),
     stroke: (
       color: (
         literal: (
@@ -87,9 +76,7 @@ $config: (
       heading-6: "neutral",
       heading-alternate: "alternate",
       links: "base0e",
-      // links
       links-alternate: "base0d",
-      // links-alte
       hr: "neutral",
     ),
   ),
