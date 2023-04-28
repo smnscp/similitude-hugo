@@ -60,6 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .forEach((control) => {
       control.oninput = () => selectScheme(parseInt(control.value));
       activateRangeButtons(control);
+      if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+        control.stepUp();
+        control.oninput();
+      }
     });
 
   document
