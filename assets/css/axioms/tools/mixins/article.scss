@@ -1,4 +1,4 @@
-@use "stylament/css/axioms/tools/mixins/coloring";
+@use "stylament/css/axioms/generic/mixins/coloring";
 
 @mixin box {
   @include coloring.set-colors("body");

@@ -42,7 +42,7 @@ $config: (
     font-weight: (),
     scale: (
       base: 1em,
-      factor: math.pow(2, 0.25),
+      ratio: math.pow(2, 0.25),
     ),
     line: (
       min: 1,

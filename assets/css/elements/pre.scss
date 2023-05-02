@@ -1,4 +1,4 @@
-@use "stylament/css/axioms/tools/mixins/coloring";
+@use "stylament/css/axioms/generic/mixins/coloring";
 
 pre {
   @include coloring.use-colors;
