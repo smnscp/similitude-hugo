@@ -3,7 +3,7 @@
 blockquote {
   @include coloring.alternate;
 
-  padding: var(--length-l1);
+  padding: var(--length-1);
   border-inline-start: var(--stroke-width-8) var(--stroke-style-default)
     var(--stroke-color-blockquote);
   margin-inline-start: calc(-1 * var(--stroke-width-8));

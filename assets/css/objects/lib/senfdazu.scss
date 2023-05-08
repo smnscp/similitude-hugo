@@ -1,6 +1,6 @@
 section.sz-list {
   counter-reset: sz-item;
-  padding-inline-start: var(--length-l2);
+  padding-inline-start: var(--length-2);
 
   > article {
     counter-increment: sz-item;
@@ -20,6 +20,6 @@ sz-item {
   --text-color: var(--color-alternate);
   --bg-color: var(--color-body-contra);
   --figure-color: var(--color-alternate-contra);
-  --avatar-size: var(--length-l1to2);
+  --avatar-size: var(--length-1½);
   --box-smoothing: var(--radius-xs);
 }

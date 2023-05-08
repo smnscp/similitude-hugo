@@ -4,13 +4,13 @@
   ul.comments,
   ul.reacts {
     list-style: none;
-    padding-inline-start: var(--length-l2);
+    padding-inline-start: var(--length-2);
 
     li {
       @include coloring.set-colors("body");
       @include coloring.use-colors;
 
-      padding: var(--length-l0to1);
+      padding: var(--length-0½);
       border-radius: var(--radius-xs);
       position: relative;
 
@@ -28,10 +28,10 @@
 
         img {
           position: absolute;
-          inset-inline-start: calc(-1 * var(--length-l2));
+          inset-inline-start: calc(-1 * var(--length-2));
           inset-block-start: 0;
-          max-block-size: var(--length-l1to2);
-          max-inline-size: var(--length-l1to2);
+          max-block-size: var(--length-1½);
+          max-inline-size: var(--length-1½);
           border-radius: var(--radius-xs);
         }
       }
