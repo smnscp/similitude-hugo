@@ -1,8 +1,8 @@
 @use "../../axioms/tools/mixins/article";
 
 /// Single Post Layout
-article.e-single-article {
-  .e-meta {
+article.var-single-article {
+  .var-meta {
     text-align: end;
   }
 

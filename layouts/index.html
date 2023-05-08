@@ -1,4 +1,4 @@
-{{ define "scope-class" }}s-homepage{{ end }}
+{{ define "scope-class" }}scp-homepage{{ end }}
 
 {{ define "header" }}
   <hgroup class="site-title">
@@ -22,7 +22,7 @@
     {{ range $taxonomy, $terms := .Site.Taxonomies }}
       <section id="sec:{{ $taxonomy }}">
         <h2>{{ $taxonomy | title }}</h2>
-        <ul class="e-taxonomy-cloud +{{ $taxonomy }}">
+        <ul class="var-taxonomy-cloud +{{ $taxonomy }}">
           {{ range $term, $_ := $terms }}
             <li data-count="{{ .Count }}" style="--count: {{ .Count }}">
               <a href="/{{ $taxonomy }}/{{ $term | urlize }}">{{ $term }}</a>

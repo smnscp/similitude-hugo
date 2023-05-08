@@ -1,12 +1,12 @@
 @use "../../axioms/tools/mixins/article";
 
 /// Post List Item
-article.e-article-list-item {
+article.var-article-list-item {
   margin-block: var(--spacing-sectioning);
 
   @include article.box;
 
-  .e-meta {
+  .var-meta {
     margin-block-start: 0;
   }
 }

@@ -1,5 +1,5 @@
 @use "stylament/css/axioms/generic/mixins/coloring";
-@use "stylament/css/objects/layout/primitive/center";
+@use "stylament/css/utilities/layout/primitive/center";
 
 /// General Page Layout
 body {
@@ -73,6 +73,6 @@ body {
   }
 
   > footer > section {
-    @extend %l-center--intrinsic;
+    @extend %lay-center--intrinsic;
   }
 }

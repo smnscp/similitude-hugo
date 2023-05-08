@@ -1,4 +1,4 @@
-:where(body.l-page-center) > {
+:where(body.lay-page-center) > {
   :where(header, main, footer) {
     --container-gutter: var(--layout-gutter);
   }
