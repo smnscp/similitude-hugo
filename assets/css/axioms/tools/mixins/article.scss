@@ -1,9 +1,9 @@
-@use "stylament/css/axioms/generic/mixins/coloring";
+@use "stylament/css/axioms/generic/coloring";
 
 @mixin box {
   @include coloring.set-colors("body");
   @include coloring.use-colors;
-  padding-block: var(--spacing-sectioning);
+  padding-block: var(--spacing-block);
   padding-inline: var(--container-gutter);
   margin-inline: calc(-1 * var(--container-gutter));
   border-radius: clamp(0rem, (100vw - var(--container-size) - 2 * var(--container-gutter)) / 4, var(--radius-xs));

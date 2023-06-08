@@ -27,7 +27,7 @@
 
     h1 {
       z-index: 1;
-      font-family: var(--font-mono);
+      font-family: var(--font-family-mono);
       text-shadow: var(--shadow-xxs);
       &::before {
         content: "[";

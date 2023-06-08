@@ -2,8 +2,6 @@
 
 /// Post List Item
 article.var-article-list-item {
-  margin-block: var(--spacing-sectioning);
-
   @include article.box;
 
   .var-meta {

@@ -1,4 +1,4 @@
-@use "stylament/css/axioms/generic/mixins/coloring";
+@use "stylament/css/axioms/generic/coloring";
 
 blockquote {
   @include coloring.alternate;

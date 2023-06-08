@@ -16,7 +16,7 @@ fieldset.var-theme-switch {
     padding: var(--stroke-width-1);
     background: var(---clr-bg);
     border: var(--stroke-width-1) solid var(---clr-fg);
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-obround);
     box-shadow: none;
 
     @mixin range-track {
@@ -31,7 +31,7 @@ fieldset.var-theme-switch {
       block-size: var(--thumb-size);
       inline-size: var(--thumb-size);
       border: none;
-      border-radius: var(--radius-full);
+      border-radius: var(--radius-obround);
       cursor: pointer;
       background: var(---clr-fg);
       box-shadow: none;

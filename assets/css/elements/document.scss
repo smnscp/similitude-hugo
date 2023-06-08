@@ -1,4 +1,4 @@
-@use "stylament/css/axioms/generic/mixins/coloring";
+@use "stylament/css/axioms/generic/coloring";
 @use "stylament/css/utilities/layout/primitive/center";
 
 /// General Page Layout
@@ -32,8 +32,8 @@ body {
   > header,
   > footer {
     @include coloring.alternate;
-    font-family: var(--font-mono);
-    --spacing-sectioning: var(--spacing-block);
+    font-family: var(--font-family-mono);
+    padding-block: var(--spacing-block);
   }
 
   > header {
@@ -41,7 +41,7 @@ body {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 2ch;
+      gap: var(--spacing-inline-md);
 
       > :first-child {
         max-inline-size: none;
@@ -62,7 +62,7 @@ body {
         line-height: inherit;
         + li::before {
           content: "·";
-          padding-inline: 0.5ch;
+          padding-inline: var(--spacing-inline-xs);
         }
         a {
           display: inline;
@@ -73,6 +73,6 @@ body {
   }
 
   > footer > section {
-    @extend %lay-center--intrinsic;
+    @extend %lyo-center--intrinsic;
   }
 }

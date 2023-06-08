@@ -9,8 +9,8 @@ section.sz-list {
     &::marker {
       content: counters(sz-item, ".") ". ";
       color: var(--color-neutral);
-      font-size: var(--font-smaller);
-      font-weight: var(--weight-bold);
+      font-size: var(--scale-smaller);
+      font-weight: var(--font-weight-bold);
     }
   }
 }

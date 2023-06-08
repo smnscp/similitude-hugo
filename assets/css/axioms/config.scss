@@ -12,9 +12,9 @@ $config: (
         page: "sm",
       ),
     ),
-    spacing: (
+    flow-space: (
       logical: (
-        sectioning: "block",
+        sectioning: "default",
       ),
     ),
   ),
@@ -50,34 +50,34 @@ $config: (
     ),
   ),
   ui: (
-    stroke: (
-      color: (
-        literal: (
-          blockquote: "var(--color-base0c)",
-        ),
+    stroke-color: (
+      literal: (
+        blockquote: "var(--color-base0c)",
       ),
     ),
   ),
-  color: (
-    logical: (
-      env: "alternate",
-      env-contra: "alternate-contra",
-      body: "theme05",
-      body-contra: "theme00",
-      neutral: "theme04",
-      alternate: "theme06",
-      alternate-contra: "theme01",
-      heading: "base0a",
-      heading-1: "base0b",
-      heading-2: "base0c",
-      heading-3: "base0d",
-      heading-4: "base0e",
-      heading-5: "base0f",
-      heading-6: "neutral",
-      heading-alternate: "alternate",
-      links: "base0e",
-      links-alternate: "base0d",
-      hr: "neutral",
+  coloring: (
+    color: (
+      logical: (
+        env: "alternate",
+        env-contra: "alternate-contra",
+        body: "theme05",
+        body-contra: "theme00",
+        neutral: "theme04",
+        alternate: "theme06",
+        alternate-contra: "theme01",
+        heading: "base0a",
+        heading-1: "base0b",
+        heading-2: "base0c",
+        heading-3: "base0d",
+        heading-4: "base0e",
+        heading-5: "base0f",
+        heading-6: "neutral",
+        heading-alternate: "alternate",
+        links: "base0e",
+        links-alternate: "base0d",
+        hr: "neutral",
+      ),
     ),
   ),
 );
