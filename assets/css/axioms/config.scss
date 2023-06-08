@@ -3,9 +3,11 @@
 $config: (
   layout: (
     length: (
-      min: 1,
-      max: 16,
-      line: 2,
+      mapped: (
+        params: (
+          sub: 2,
+        ),
+      ),
     ),
     container: (
       logical: (
