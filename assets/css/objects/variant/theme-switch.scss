@@ -1,22 +1,23 @@
+@use "stylament/css/axioms/properties/io" as *;
+
 /// Theme switch
 fieldset.var-theme-switch {
   display: block;
-  margin-inline: auto 0;
   border: none;
   inline-size: fit-content;
   padding: 0;
   user-select: none;
 
   input[type="range"] {
-    --thumb-size: var(--stroke-width-8);
-    -webkit-appearance: none;
+    ---thumb-size: #{svar(stroke-width-8)};
+    appearance: none;
     box-sizing: content-box;
-    block-size: var(--thumb-size);
-    inline-size: calc(2 * var(--thumb-size));
-    padding: var(--stroke-width-1);
+    block-size: var(---thumb-size);
+    inline-size: calc(2 * var(---thumb-size));
+    padding: svar(stroke-width-1);
     background: var(---clr-bg);
-    border: var(--stroke-width-1) solid var(---clr-fg);
-    border-radius: var(--radius-obround);
+    border: svar(stroke-width-1) solid var(---clr-fg);
+    border-radius: svar(radius-obround);
     box-shadow: none;
 
     @mixin range-track {
@@ -28,10 +29,10 @@ fieldset.var-theme-switch {
 
     @mixin range-thumb {
       box-sizing: border-box;
-      block-size: var(--thumb-size);
-      inline-size: var(--thumb-size);
+      block-size: var(---thumb-size);
+      inline-size: var(---thumb-size);
       border: none;
-      border-radius: var(--radius-obround);
+      border-radius: svar(radius-obround);
       cursor: pointer;
       background: var(---clr-fg);
       box-shadow: none;

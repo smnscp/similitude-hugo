@@ -1,17 +1,18 @@
 @use "stylament/css/axioms/generic/coloring";
 @use "stylament/css/utilities/layout/primitive/center";
+@use "stylament/css/axioms/properties/io" as *;
 
 /// General Page Layout
 body {
-  --layout-gutter: 7.5vw;
+  ---layout-gutter: 7.5vw;
 
   @include coloring.set-colors("env");
   @include coloring.use-colors;
 
   padding-block: clamp(
     0rem,
-    (100vw - 2 * var(--layout-gutter) - var(--container-page)) / 2,
-    var(--spacing-block)
+    (100vw - 2 * var(---layout-gutter) - svar(container-page)) / 2,
+    svar(spacing-block)
   );
 
   > main {
@@ -32,8 +33,8 @@ body {
   > header,
   > footer {
     @include coloring.alternate;
-    font-family: var(--font-family-mono);
-    padding-block: var(--spacing-block);
+    font-family: svar(font-family-mono);
+    padding-block: svar(spacing-block);
   }
 
   > header {
@@ -41,11 +42,15 @@ body {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: var(--spacing-inline-md);
+      gap: svar(spacing-block-sm) svar(spacing-inline-md);
 
       > :first-child {
         max-inline-size: none;
         flex-grow: 1e5;
+      }
+
+      > * {
+        margin-block-start: 0;
       }
     }
     a:any-link {
@@ -62,7 +67,7 @@ body {
         line-height: inherit;
         + li::before {
           content: "·";
-          padding-inline: var(--spacing-inline-xs);
+          padding-inline: svar(spacing-inline-xs);
         }
         a {
           display: inline;

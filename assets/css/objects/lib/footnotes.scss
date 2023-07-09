@@ -1,5 +1,7 @@
+@use "stylament/css/axioms/properties/io" as *;
+
 div.footnotes {
-  margin-block-start: var(--spacing-block);
-  font-size: var(--scale--1);
-  line-height: var(--line--1);
+  margin-block-start: svar(spacing-block);
+  font-size: svar(font-size--1);
+  line-height: svar(line--1);
 }

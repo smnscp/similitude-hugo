@@ -1,11 +1,12 @@
 @use "stylament/css/axioms/generic/coloring";
+@use "stylament/css/axioms/properties/io" as *;
 
 @mixin box {
   @include coloring.set-colors("body");
   @include coloring.use-colors;
-  padding-block: var(--spacing-block);
-  padding-inline: var(--container-gutter);
-  margin-inline: calc(-1 * var(--container-gutter));
-  border-radius: clamp(0rem, (100vw - var(--container-size) - 2 * var(--container-gutter)) / 4, var(--radius-xs));
-  box-shadow: var(--shadow-xxs), var(--shadow-sm);
+  padding-block: svar(spacing-block);
+  padding-inline: var(---container-gutter);
+  margin-inline: calc(-1 * var(---container-gutter));
+  border-radius: clamp(0rem, (100vw - var(---container-size) - 2 * var(---container-gutter)) / 4, svar(radius-xs));
+  box-shadow: svar(shadow-xxs), svar(shadow-sm);
 }

@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "stylament/css/axioms/properties/io" as *;
 
 $config: (
   layout: (
@@ -14,9 +15,11 @@ $config: (
         page: "sm",
       ),
     ),
-    flow-space: (
-      logical: (
-        sectioning: "default",
+    spacing: (
+      flow: (
+        logical: (
+          sectioning: "/spacing-block-md",
+        ),
       ),
     ),
   ),
@@ -54,12 +57,22 @@ $config: (
   ui: (
     stroke-color: (
       literal: (
-        blockquote: "var(--color-base0c)",
+        blockquote: svar(color-theme0c),
       ),
     ),
   ),
   coloring: (
     color: (
+      literal: (
+        theme08: var(--color-base08),
+        theme09: var(--color-base09),
+        theme0a: var(--color-base0a),
+        theme0b: var(--color-base0b),
+        theme0c: var(--color-base0c),
+        theme0d: var(--color-base0d),
+        theme0e: var(--color-base0e),
+        theme0f: var(--color-base0f),
+      ),
       logical: (
         env: "alternate",
         env-contra: "alternate-contra",
@@ -68,16 +81,16 @@ $config: (
         neutral: "theme04",
         alternate: "theme06",
         alternate-contra: "theme01",
-        heading: "base0a",
-        heading-1: "base0b",
-        heading-2: "base0c",
-        heading-3: "base0d",
-        heading-4: "base0e",
-        heading-5: "base0f",
+        heading: "theme0a",
+        heading-1: "theme0b",
+        heading-2: "theme0c",
+        heading-3: "theme0d",
+        heading-4: "theme0e",
+        heading-5: "theme0f",
         heading-6: "neutral",
         heading-alternate: "alternate",
-        links: "base0e",
-        links-alternate: "base0d",
+        links: "theme0e",
+        links-alternate: "theme0d",
         hr: "neutral",
       ),
     ),

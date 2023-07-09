@@ -1,25 +1,27 @@
+@use "stylament/css/axioms/properties/io" as *;
+
 /// Logical color mapping for light theme.
 @mixin light {
-  --color-theme00: var(--color-base07);
-  --color-theme01: var(--color-base06);
-  --color-theme02: var(--color-base05);
-  --color-theme03: var(--color-base04);
-  --color-theme04: var(--color-base03);
-  --color-theme05: var(--color-base02);
-  --color-theme06: var(--color-base01);
-  --color-theme07: var(--color-base00);
+  #{$🌱}color-theme00: var(--color-base07);
+  #{$🌱}color-theme01: var(--color-base06);
+  #{$🌱}color-theme02: var(--color-base05);
+  #{$🌱}color-theme03: var(--color-base04);
+  #{$🌱}color-theme04: var(--color-base03);
+  #{$🌱}color-theme05: var(--color-base02);
+  #{$🌱}color-theme06: var(--color-base01);
+  #{$🌱}color-theme07: var(--color-base00);
   color-scheme: light;
 }
 
 /// Logical color mapping for dark theme.
 @mixin dark {
-  --color-theme00: var(--color-base00);
-  --color-theme01: var(--color-base01);
-  --color-theme02: var(--color-base02);
-  --color-theme03: var(--color-base03);
-  --color-theme04: var(--color-base04);
-  --color-theme05: var(--color-base05);
-  --color-theme06: var(--color-base06);
-  --color-theme07: var(--color-base07);
+  #{$🌱}color-theme00: var(--color-base00);
+  #{$🌱}color-theme01: var(--color-base01);
+  #{$🌱}color-theme02: var(--color-base02);
+  #{$🌱}color-theme03: var(--color-base03);
+  #{$🌱}color-theme04: var(--color-base04);
+  #{$🌱}color-theme05: var(--color-base05);
+  #{$🌱}color-theme06: var(--color-base06);
+  #{$🌱}color-theme07: var(--color-base07);
   color-scheme: dark;
 }

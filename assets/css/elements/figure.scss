@@ -1,12 +1,13 @@
 @use "stylament/css/axioms/generic/coloring";
+@use "stylament/css/axioms/properties/io" as *;
 
 figure {
   @include coloring.inverse-base;
   @include coloring.alternate;
 
-  margin-inline: calc(-1 * var(--container-gutter));
-  margin-block-start: var(--spacing-block);
-  padding: var(--spacing-block);
+  margin-inline: calc(-1 * var(---container-gutter));
+  margin-block-start: svar(spacing-block);
+  padding: svar(spacing-block);
 
   &.no-outdent {
     margin-inline: 0;
@@ -14,7 +15,7 @@ figure {
   
   img {
     inline-size: 100%;
-    border-radius: var(--radius-xs);
+    border-radius: svar(radius-xs);
   }
   
   figcaption {
@@ -30,6 +31,6 @@ figure {
   a {
     color: inherit;
     text-decoration: underline;
-    background-color: var(--color-links);
+    background-color: svar(color-links);
   }
 }

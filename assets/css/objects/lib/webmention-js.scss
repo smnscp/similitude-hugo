@@ -1,17 +1,18 @@
 @use "stylament/css/axioms/generic/coloring";
+@use "stylament/css/axioms/properties/io" as *;
 
 #sec\:webmentions {
   ul.comments,
   ul.reacts {
     list-style: none;
-    padding-inline-start: var(--length-2);
+    padding-inline-start: svar(length-2);
 
     li {
       @include coloring.set-colors("body");
       @include coloring.use-colors;
 
-      padding: var(--length-0½);
-      border-radius: var(--radius-xs);
+      padding: svar(length-0½);
+      border-radius: svar(radius-xs);
       position: relative;
 
       .text {
@@ -20,7 +21,7 @@
       }
 
       .name {
-        color: var(--color-neutral);
+        color: svar(color-neutral);
       }
 
       a.reaction {
@@ -28,11 +29,11 @@
 
         img {
           position: absolute;
-          inset-inline-start: calc(-1 * var(--length-2));
+          inset-inline-start: calc(-1 * svar(length-2));
           inset-block-start: 0;
-          max-block-size: var(--length-1½);
-          max-inline-size: var(--length-1½);
-          border-radius: var(--radius-xs);
+          max-block-size: svar(length-1½);
+          max-inline-size: svar(length-1½);
+          border-radius: svar(radius-xs);
         }
       }
     }

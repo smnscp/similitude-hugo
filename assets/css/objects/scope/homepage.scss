@@ -1,10 +1,12 @@
+@use "stylament/css/axioms/properties/io" as *;
+
 /// Homepage Layout
 .scp-homepage {
   .site-title {
     display: flex;
-    font-size: var(--scale-4);
+    font-size: svar(font-size-4);
     line-height: 3em;
-    filter: drop-shadow(var(--shadow-xs));
+    filter: drop-shadow(svar(shadow-xs));
 
     * {
       font-size: inherit;
@@ -27,8 +29,8 @@
 
     h1 {
       z-index: 1;
-      font-family: var(--font-family-mono);
-      text-shadow: var(--shadow-xxs);
+      font-family: svar(font-family-mono);
+      text-shadow: svar(shadow-xxs);
       &::before {
         content: "[";
       }

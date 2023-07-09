@@ -1,9 +1,9 @@
 :where(body.lyo-page-center) > {
   :where(header, main, footer) {
-    --container-gutter: var(--layout-gutter);
+    ---container-gutter: var(---layout-gutter);
   }
 
   :where(header, footer) {
-    --container-size: none;
+    ---container-size: none;
   }
 }

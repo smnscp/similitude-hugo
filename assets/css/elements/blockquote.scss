@@ -1,12 +1,13 @@
 @use "stylament/css/axioms/generic/coloring";
+@use "stylament/css/axioms/properties/io" as *;
 
 blockquote {
   @include coloring.alternate;
 
-  padding: var(--length-1);
-  border-inline-start: var(--stroke-width-8) var(--stroke-style-default)
-    var(--stroke-color-blockquote);
-  margin-inline-start: calc(-1 * var(--stroke-width-8));
+  padding: svar(length-1);
+  border-inline-start: svar(stroke-width-8) svar(stroke-style-default)
+    svar(stroke-color-blockquote);
+  margin-inline-start: calc(-1 * svar(stroke-width-8));
 
   &::before {
     display: none;

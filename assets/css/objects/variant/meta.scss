@@ -1,7 +1,9 @@
+@use "stylament/css/axioms/properties/io" as *;
+
 /// Article meta data
 dl.var-meta {
-  font-size: var(--scale-smaller);
-  line-height: var(--line--1);
+  font-size: svar(font-size-smaller);
+  line-height: svar(line--1);
 
   dt,
   dd {
@@ -10,7 +12,7 @@ dl.var-meta {
   }
 
   dt {
-    color: var(--color-neutral);
+    color: svar(color-neutral);
 
     &::before {
       content: "";

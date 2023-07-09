@@ -1,3 +1,6 @@
+@use "stylament/css/axioms/properties/io" with (
+  $-prefix: "🌶️-"
+);
 @use "axioms/config";
 @use "stylament/css/axioms" with ($config-custom: config.$config);
 @use "axioms/generic/root";
@@ -5,7 +8,7 @@
 @use "elements";
 @use "stylament/css/idioms" as id;
 @use "idioms";
-@use "stylament/css/objects" as ob;
+@use "stylament/css/objects/variant" as ob;
 @use "objects";
 @use "stylament/css/utilities" as ut;
 @use "utilities";

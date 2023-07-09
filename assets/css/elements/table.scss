@@ -1,10 +1,12 @@
+@use "stylament/css/axioms/properties/io" as *;
+
 table {
   inline-size: 100%;
 }
 
 th,
 td {
-  border-block-end: 1px solid var(--color-neutral);
+  border-block-end: 1px solid svar(color-neutral);
 }
 
 tr:last-child td {

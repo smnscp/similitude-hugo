@@ -1,11 +1,12 @@
 @use "stylament/css/axioms/generic/coloring";
+@use "stylament/css/axioms/properties/io" as *;
 
 pre {
   @include coloring.use-colors;
   max-inline-size: none;
   overflow-x: auto;
-  padding: var(--spacing-block);
-  border-radius: var(--radius-xs);
+  padding: svar(spacing-block);
+  border-radius: svar(radius-xs);
 
   code {
     background-color: transparent;

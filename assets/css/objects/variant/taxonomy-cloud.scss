@@ -1,3 +1,5 @@
+@use "stylament/css/axioms/properties/io" as *;
+
 /// Taxonomy Clouds
 ul.var-taxonomy-cloud {
   padding-inline: 0;
@@ -5,23 +7,23 @@ ul.var-taxonomy-cloud {
 
   li::after {
     content: "(" attr(data-count) ")";
-    font-size: var(--scale-smaller);
+    font-size: svar(font-size-smaller);
   }
 
   &.\+categories {
     a {
       text-transform: capitalize;
-      font-weight: var(--font-weight-bold);
+      font-weight: svar(font-weight-bold);
     }
   }
 
   &.\+tags {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-block);
+    gap: var(---wrap-space);
 
     li {
-      font-size: calc(var(--scale-smaller) + 3% * var(--count));
+      font-size: calc(svar(font-size-smaller) + 3% * svar(count));
     }
   }
 }
