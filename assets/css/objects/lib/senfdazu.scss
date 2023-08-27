@@ -19,9 +19,9 @@ section.sz-list {
 
 sz-root,
 sz-item {
-  --text-color: svar(color-alternate);
-  --bg-color: svar(color-body-contra);
-  --figure-color: svar(color-alternate-contra);
-  --avatar-size: svar(length-1½);
-  --box-smoothing: svar(radius-xs);
+  --text-color: #{svar(color-alternate)};
+  --bg-color: #{svar(color-body-contra)};
+  --figure-color: #{svar(color-alternate-contra)};
+  --avatar-size: #{svar(length-1½)};
+  --box-smoothing: #{svar(radius-xs)};
 }
