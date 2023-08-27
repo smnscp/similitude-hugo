@@ -1,5 +1,4 @@
 @use "sass:math";
-@use "stylament/css/axioms/properties/io" as *;
 
 $config: (
   layout: (
@@ -56,8 +55,8 @@ $config: (
   ),
   ui: (
     stroke-color: (
-      literal: (
-        blockquote: svar(color-theme0c),
+      logical: (
+        blockquote: "/color-theme0c",
       ),
     ),
   ),
