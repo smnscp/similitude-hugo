@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development npm run clean && npm run watchcss & npm run devserver",
     "build": "NODE_ENV=production npm run clean && npm run mkcss && hugo --gc --minify",
     "watchcss": "npm run mkcss -- --watch",
-    "devserver": "hugo server -DF --config config.toml,config.local.toml"
+    "devserver": "hugo server -DF --config hugo.toml,hugo.local.toml"
   },
   "dependencies": {
     "@fontsource/source-code-pro": "latest",
